@@ -1,0 +1,59 @@
+[
+    {
+      "name": "Alia & Ranbir",
+      "mainPhoto": "images/image7.jpg",
+      "description": "Event description goes here.",
+      "dates": "Event dates go here",
+      "additionalPhotos": ["photo1.jpg", "photo2.jpg"]
+    },
+    {
+      "name": "EventName",
+      "mainPhoto": "event_main_photo.jpg",
+      "description": "Event description goes here.",
+      "dates": "Event dates go here",
+      "additionalPhotos": ["photo1.jpg", "photo2.jpg"]
+    },
+    {
+      "name": "EventName",
+      "mainPhoto": "event_main_photo.jpg",
+      "description": "Event description goes here.",
+      "dates": "Event dates go here",
+      "additionalPhotos": ["photo1.jpg", "photo2.jpg"]
+    },
+    {
+      "name": "EventName",
+      "mainPhoto": "event_main_photo.jpg",
+      "description": "Event description goes here.",
+      "dates": "Event dates go here",
+      "additionalPhotos": ["photo1.jpg", "photo2.jpg"]
+    },
+    {
+      "name": "EventName",
+      "mainPhoto": "event_main_photo.jpg",
+      "description": "Event description goes here.",
+      "dates": "Event dates go here",
+      "additionalPhotos": ["photo1.jpg", "photo2.jpg"]
+    },
+    {
+      "name": "EventName",
+      "mainPhoto": "event_main_photo.jpg",
+      "description": "Event description goes here.",
+      "dates": "Event dates go here",
+      "additionalPhotos": ["photo1.jpg", "photo2.jpg"]
+    },
+    {
+      "name": "EventName",
+      "mainPhoto": "event_main_photo.jpg",
+      "description": "Event description goes here.",
+      "dates": "Event dates go here",
+      "additionalPhotos": ["photo1.jpg", "photo2.jpg"]
+    },
+    {
+      "name": "EventName",
+      "mainPhoto": "event_main_photo.jpg",
+      "description": "Event description goes here.",
+      "dates": "Event dates go here",
+      "additionalPhotos": ["photo1.jpg", "photo2.jpg"]
+    }
+  ]
+  
