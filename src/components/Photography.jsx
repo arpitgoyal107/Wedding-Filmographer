@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ScrollToTop from './Card/ScrollToTop'
 
 const events = [
   {
@@ -9,17 +10,17 @@ const events = [
   },
   {
     id: 2,
-    url: '../images/image8.jpg',
+    url: '../images/image1.jpg',
     name: 'Alia & Ranbir',
   },
   {
     id: 3,
-    url: '../images/image9.jpg',
+    url: '../images/image2.jpg',
     name: 'Alia & Ranbir',
   },
   {
     id: 4,
-    url: '../images/image7.jpg',
+    url: '../images/image3.jpg',
     name: 'Alia & Ranbir',
   },
   {
@@ -34,12 +35,12 @@ const events = [
   },
   {
     id: 7,
-    url: '../images/image7.jpg',
+    url: '../images/image5.jpg',
     name: 'Alia & Ranbir',
   },
   {
     id: 8,
-    url: '../images/image8.jpg',
+    url: '../images/image4.jpg',
     name: 'Alia & Ranbir',
   },
   {
@@ -47,95 +48,46 @@ const events = [
     url: '../images/image9.jpg',
     name: 'Alia & Ranbir',
   },
+  {
+    id: 10,
+    url: '../images/image3.jpg',
+    name: 'Alia & Ranbir',
+  },
 ]
+
 
 function Gallery() {
 
   return (
     <>
-    <div className='bg-[#efa0a015] '>
-      <div className=" w-full h-screen md:h-[85vh] bg-[url('../images/image2.jpg')] bg-fixed bg-center bg-no-repeat bg-cover relative top-[-172.2px]">
-          <div className="inset-0 h-[85vh] flex items-center justify-center max-w-6xl  mx-auto px-6">
-              <h1 className="text-white md:text-2xl text-xl bg-[#00000027] p-2 rounded-md text-center font-bold leading-normal border-2 ">Documenting Emotions Through Art</h1>
-          </div>
-      </div>
-    
-      <div className='pb-32 mt-[-50px] max-w-5xl px-6 mx-auto '>
-          <img src="../images/bride.png" alt="" className='w-40 mx-auto' />
-          <h1 className='text-center font-medium text-2xl italic font-serif'>signature</h1>
-          {events.map(event => (
-            <div key={event.id} className='grid grid-cols-3 gap-4 pt-8'>
-              <Link to={`/photography/${event.name}`}>
-                <img src={event.url} alt={event.name} />
-                <p>{event.name}</p>
-              </Link>
+    <ScrollToTop/>
+    <div className='pt-[137px]'></div>
+    <div className='bg-white max-w-screen-2xl mx-auto px-6 h-[calc(100svh-137px)] overflow-hidden'>
+        <div className=" w-full  bg-[url('../images/image5.jpg')] bg-fixed bg-center bg-no-repeat bg-cover relative top-0">
+            <div className=" h-[calc(100svh-137px)] flex items-center justify-center max-w-5xl  mx-auto px-6">
+                <h1 className="text-white md:text-4xl text-xl bg-[#00000027] p-2 rounded-md text-center font-bold leading-normal border-2 ">We are here to win your Hearts.</h1>
             </div>
-          ))}
-      </div>
+        </div>
+    </div>
 
-      <div className='pb-32 mt-[-50px] max-w-5xl px-6 mx-auto '>
-          <img src="../images/bride.png" alt="" className='w-40 mx-auto' />
-          <h1 className='text-center font-medium text-2xl italic font-serif'>signature</h1>
+    <div className=' max-w-5xl mx-auto my-24'>
+      <div className=' columns-3'>
+        {events.map(event => (
+          <div key={event.id} className='mb-4 relative overflow-hidden'>
+            <Link to={`/photography/${event.name}`}>
+              <img src={event.url} alt={event.name} className=' transition-transform duration-300 hover:scale-110  ' />
 
-          <div className='grid grid-cols-3 gap-4 pt-8'>
-              <div>
-                  <img src="../images/image7.jpg" alt="" className=''/>
-                  <h1 className='text-center py-2 uppercase'>Alia & Ranbir</h1>
+              <div className='absolute inset-x-0 bottom-0 h-16 bg-black opacity-50'></div>
+              <div className='absolute inset-x-0 bottom-0 h-16 flex items-center justify-center text-white'>
+               <p className=' text-center'>{event.name}</p>
               </div>
-              <div>
-                  <img src="../images/image8.jpg" alt="" className=''/>
-                  <h1 className='text-center py-2 uppercase'>Alia & Ranbir</h1>
-              </div>
-              <div>
-                  <img src="../images/image9.jpg" alt="" className=''/>
-                  <h1 className='text-center py-2 uppercase'>Alia & Ranbir</h1>
-              </div>
-              <div>
-                  <img src="../images/image8.jpg" alt="" className=''/>
-                  <h1 className='text-center py-2 uppercase'>Alia & Ranbir</h1>
-              </div>
-              <div>
-                  <img src="../images/image9.jpg" alt="" className=''/>
-                  <h1 className='text-center py-2 uppercase'>Alia & Ranbir</h1>
-              </div>
-              <div>
-                  <img src="../images/image7.jpg" alt="" className=''/>
-                  <h1 className='text-center py-2 uppercase'>Alia & Ranbir</h1>
-              </div>
+              
+            </Link>
           </div>
-
-          <hr className='mt-10 border-2 border-gray-500'/>
-          <img src="../images/bride.png" alt="" className='w-40 mx-auto' />
-
-          <div>
-            <h1 className='text-center font-medium text-2xl italic font-serif'>intimates</h1>
-            <div className='grid grid-cols-3 gap-4 pt-8'>
-                <div>
-                    <img src="../images/image7.jpg" alt="" className=''/>
-                    <h1 className='text-center py-2 uppercase'>Alia & Ranbir</h1>
-                </div>
-                <div>
-                    <img src="../images/image8.jpg" alt="" className=''/>
-                    <h1 className='text-center py-2 uppercase'>Alia & Ranbir</h1>
-                </div>
-                <div>
-                    <img src="../images/image9.jpg" alt="" className=''/>
-                    <h1 className='text-center py-2 uppercase'>Alia & Ranbir</h1>
-                </div>
-                <div>
-                    <img src="../images/image8.jpg" alt="" className=''/>
-                    <h1 className='text-center py-2 uppercase'>Alia & Ranbir</h1>
-                </div>
-                <div>
-                    <img src="../images/image9.jpg" alt="" className=''/>
-                    <h1 className='text-center py-2 uppercase'>Alia & Ranbir</h1>
-                </div>
-            </div>
-
-            <hr className='mt-10 border-2 border-gray-500'/>
-          </div>
+        ))}
       </div>
     </div>
+
     </>
   )
 }

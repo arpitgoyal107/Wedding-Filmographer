@@ -15,26 +15,20 @@ const ImageCarousel = () => {
 
   return (
     <>
-    <div className='relative lg:h-[105vh] md:h-[103vh] h-[102vh]'>
-      <div className="h-screen relative overflow-hidden">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 ${index === currentImage ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`}
-          >
-            <img
-              className="w-full h-full object-cover"
-              src={image}
-              alt={`Carousel Image ${index + 1}`}
-            />
-          </div>
-        ))}
-      </div>
-      <div className='w-full z-10 absolute bottom-0 '>
-       <img src="../images/tagline.png" alt="" className='w-full'/>
-      </div>
+    <div className=" h-[calc(100vh-137px)] max-w-screen-2xl overflow-hidden relative mx-auto">
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 ${index === currentImage ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`}
+        >
+          <img
+            className="w-full h-full object-cover"
+            src={image}
+            alt={`Carousel Image ${index + 1}`}
+          />
+        </div>
+      ))}
     </div>
-    
     </>
   );
 };

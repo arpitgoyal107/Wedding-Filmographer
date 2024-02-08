@@ -11,16 +11,16 @@ function Header() {
     
     return (
         <>
-        <header className='px-6 m-0 pt-6 relative z-10'>
-            <nav className="flex items-center justify-between py-4 max-w-screen-xl mx-auto">
+        <header className='px-12 m-0 z-10 bg-white fixed w-full'>
+            <nav className="flex items-center justify-between pt-6 pb-4 max-w-screen-2xl mx-auto">
                 {/* Logo */}
                 <Link to="/" className="flex items-center">
-                    <img src="../images/White-1.png" alt="Logo" className="h-28" />
+                    <img src="../images/Black-png.png" alt="Logo" className=" h-24" />
                 </Link>
 
                 {/* Responsive menu button (for mobile) */}
                 <div className="md:hidden">
-                    <button onClick={toggleMenu} className="text-white focus:outline-none">
+                    <button onClick={toggleMenu} className="text-black focus:outline-none">
                     <svg
                         className="h-6 w-6 fill-current"
                         viewBox="0 0 24 24"
@@ -92,27 +92,35 @@ function Header() {
 
                 {/* Menu options */}
                 <div className={`md:flex items-center ${isOpen ? 'block' : 'hidden'}`}>
-                    <ul className="flex font-semibold lg:flex-row space-x-8 tracking-wider">
+                    <ul className="flex font-bold lg:flex-row space-x-12 tracking-widest">
                         <li>
                             <NavLink
                             to="/"
-                            className={({isActive}) =>`duration-300 ${isActive ? "text-red-200" : "text-white"} hover:text-red-200 uppercase`}
+                            className={({isActive}) =>`duration-300 ${isActive ? "text-gray-400" : "text-black"} hover:text-gary-400 uppercase`}
                             >
                             Home
                             </NavLink>
                         </li>
                         <li>
                             <NavLink
-                            to="/photography"
-                            className={({isActive}) =>`duration-300 ${isActive ? "text-red-200" : "text-white"} hover:text-red-200 uppercase`}
+                            to="/about-us"
+                            className={({isActive}) =>`duration-300 ${isActive ? "text-gray-400" : "text-black"} hover:text-gary-400 uppercase`}
                             >
-                            Photography
+                            About Us
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                            to="/photography"
+                            className={({isActive}) =>`duration-300 ${isActive ? "text-gray-400" : "text-black"} hover:text-gary-400 uppercase`}
+                            >
+                            Our Work
                             </NavLink>
                         </li>
                         <li>
                             <NavLink
                             to="/questions"
-                            className={({isActive}) =>`duration-300 ${isActive ? "text-red-200" : "text-white"} hover:text-red-200 uppercase`}
+                            className={({isActive}) =>`duration-300 ${isActive ? "text-gray-400" : "text-black"} hover:text-gary-400 uppercase`}
                             >
                             Questions?
                             </NavLink>
@@ -120,9 +128,9 @@ function Header() {
                         <li>
                             <NavLink
                             to="/contact"
-                            className={({isActive}) =>`duration-300 ${isActive ? "text-red-200" : "text-white"} hover:text-red-200 uppercase`}
+                            className={({isActive}) =>`duration-300 ${isActive ? "text-gray-400" : "text-black"} hover:text-gary-400 uppercase`}
                             >
-                            Contact
+                            Contact Us
                             </NavLink>
                         </li>
                     </ul>
