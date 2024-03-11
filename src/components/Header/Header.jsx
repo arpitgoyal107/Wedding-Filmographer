@@ -11,8 +11,8 @@ function Header() {
     
     return (
         <>
-        <header className='px-12 m-0 z-10 bg-white fixed w-full'>
-            <nav className="flex items-center justify-between pt-6 pb-4 max-w-screen-2xl mx-auto">
+        <header className='px-12 m-0 z-10 bg-[#FFFBF5] fixed w-full'>
+            <nav className="flex items-center justify-between py-2 max-w-screen-2xl mx-auto">
                 {/* Logo */}
                 <Link to="/" className="flex items-center">
                     <img src="../images/Black-png.png" alt="Logo" className=" h-24" />
