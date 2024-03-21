@@ -27,7 +27,6 @@ const events = [
 ];
 
 const images = [
-  "/images/section/7.jpg",
   "/images/section/9.jpg",
   "/images/section/8.jpg",
   "/images/section/6.jpg",
@@ -145,7 +144,7 @@ function Gallery() {
   return (
     <>
       <ScrollToTop />
-      <div className="bg-[#FFFBF5]">
+      <section className="bg-[#FFFBF5] overflow-hidden">
         <div className="pt-[112px]"></div>
         <div className=" h-[calc(100svh-112px)]">
           <ImageCarousel images={images} />
@@ -207,7 +206,8 @@ function Gallery() {
               </h1>
             </div>
           </div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-1">
+
+          <div className="grid grid-cols-3 gap-1">
             {instagramfeed.map((instagrampost) => (
               <div
                 key={instagrampost.url}
@@ -224,12 +224,8 @@ function Gallery() {
               </div>
             ))}
           </div>
-
-          <div className=" justify-center flex mt-6">
-            <img src="/images/decor/border.png" alt="#FFDFDF" />
-          </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
