@@ -77,7 +77,7 @@ function Faq() {
           <ImageCarousel images={images} />
         </div>
 
-        <div className=" max-w-4xl grid grid-cols-3 mx-auto px-6 gap-6 my-12 md:my-32">
+        <div className=" max-w-4xl grid grid-cols-3 mx-auto px-6 gap-2 my-12 md:my-32">
           <div className=" aspect-[3/4] overflow-hidden">
             <img
               src="../images/section/10.jpg"
@@ -106,7 +106,7 @@ function Faq() {
             <h1 className="text-[#624B14] drop-shadow-md font-bold text-3xl md:text-6xl text-center">
               Frequently Asked Questions
             </h1>
-            <p className="text-normal text-lg sm:text-xl font-medium text-[#B19470] mt-2 pl-3 self-center text-center">
+            <p className=" text-base md:text-lg font-medium text-[#B19470] mt-2 pl-3 self-center text-center">
               Got a question? We're here to answer! if you don't see your
               question here, drop us a line at our{" "}
               <Link
@@ -124,10 +124,10 @@ function Faq() {
                 key={index}
                 className="bg-[#DED0B6] p-6 rounded-sm border-2 border-white"
               >
-                <dt className="text-[#624B14] drop-shadow-md font-bold">
+                <dt className="text-[#624B14] drop-shadow-md font-bold text-justify text-base md:text-lg ">
                   {question.question}
                 </dt>
-                <dd className="text-[#624B14] text-justify italic font-normal leading-relaxed">
+                <dd className="text-[#624B14] text-justify italic font-normal leading-relaxed text-sm md:text-base">
                   {question.answer}
                 </dd>
               </div>
