@@ -57,15 +57,18 @@ function Home() {
                   Check out our short history and why we've decided to get into
                   the wedding filmography business.
                 </h1>
-                <Link to="/about-us" className="btn underline">
+                <Link
+                  to="/about-us"
+                  className="btn underline text-sm md:text-base "
+                >
                   Read More
                 </Link>
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center md:justify-end  self-center">
                 <img
-                  src="../images/decor/cluster.png"
+                  src="../images/decor/hero.jpg"
                   alt=""
-                  className=" w-full"
+                  className=" w-2/3 shadow-2xl drop-shadow-2xl "
                 />
               </div>
             </div>

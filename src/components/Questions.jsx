@@ -77,7 +77,7 @@ function Faq() {
           <ImageCarousel images={images} />
         </div>
 
-        <div className=" max-w-4xl grid md:grid-cols-3 grid-cols-2 mx-auto px-6 gap-6 my-12 md:my-32">
+        <div className=" max-w-4xl grid grid-cols-3 mx-auto px-6 gap-6 my-12 md:my-32">
           <div className=" aspect-[3/4] overflow-hidden">
             <img
               src="../images/section/10.jpg"
