@@ -193,7 +193,7 @@ function Gallery() {
           />
         </div>
 
-        <div className="py-12 md:pt-20 md:pb-32 max-w-7xl px-6 mx-auto">
+        <div className="py-12 md:pt-20 md:pb-32 max-w-7xl px-3 mx-auto">
           <div className=" flex justify-center mb-6 md:mb-12">
             <div className=" flex items-center">
               <img

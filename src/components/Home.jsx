@@ -122,7 +122,7 @@ function Home() {
             </div>
           </div>
 
-          <div className=' bg-[url("/../images/section/1.jpg")] bg-fixed bg-center bg-no-repeat bg-cover h-[calc(100svh-112px)]'></div>
+          <div className=' bg-[url("/../images/section/1.jpg")] bg-fixed bg-center bg-no-repeat bg-cover h-[100vh]'></div>
         </section>
         <div className="mt-[-112px] ">
           <Gallery />
