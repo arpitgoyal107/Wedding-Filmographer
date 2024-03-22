@@ -118,7 +118,7 @@ function Faq() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 px-12 ">
+          <div className="grid md:grid-cols-2 gap-6 px-6 ">
             {questions.map((question, index) => (
               <div
                 key={index}
