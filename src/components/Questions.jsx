@@ -66,76 +66,64 @@ const questions = [
 ];
 
 const images = ["/images/section/7.jpg"];
+const images2 = [
+  "/images/section/8.jpg",
+  "/images/section/9.jpg",
+  "/images/section/10.jpg",
+  "/images/section/11.jpg",
+];
 
 function Faq() {
   return (
     <>
       <ScrollToTop />
-      <section className="bg-[#FFFBF5] overflow-hidden">
+      <section className=" bg-[#FFFBF5] overflow-hidden">
         <div className="pt-[112px]"></div>
         <div className=" h-[calc(100svh-112px)]">
           <ImageCarousel images={images} />
         </div>
 
-        <div className=" bg-[#D14D72] pt-32 pb-16">
-          <div className=" max-w-5xl grid grid-cols-3 mx-auto px-6 gap-2 mb-24">
-            <div className=" aspect-[3/4] overflow-hidden">
-              <img
-                src="../images/section/12.jpg"
-                alt=""
-                className="h-full object-cover w-full"
-              />
-            </div>
-            <div className=" aspect-[3/4] overflow-hidden">
-              <img
-                src="../images/section/11.jpg"
-                alt=""
-                className="h-full object-cover w-full"
-              />
-            </div>
-            <div className=" aspect-[3/4] overflow-hidden">
-              <img
-                src="../images/section/10.jpg"
-                alt=""
-                className="h-full object-cover w-full"
-              />
-            </div>
-          </div>
-
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="grid md:grid-cols-2">
-              <h1 className="text-[#FFDFDF] drop-shadow-md font-bold text-3xl md:text-6xl text-center">
+        <div className=" bg-[#FFFBF5] lg:pt-24 py-16">
+          <div className=" max-w-7xl mx-auto px-12 lg:flex">
+            <div className="lg:w-1/3 self-center lg:pr-6 overflow-hidden">
+              <h1 className="text-[#D14D72] drop-shadow-md font-bold text-3xl lg:text-6xl text-left">
                 Frequently Asked Questions
               </h1>
-              <p className=" text-base md:text-lg font-medium text-[#FFDFDF] mt-2 pl-3 self-center text-center">
+              <p className=" text-base md:text-lg font-medium text-[#D14D72] mt-2 lg:mt-6 mb-12 lg:mb-0 self-center text-justify">
                 Got a question? We're here to answer! if you don't see your
                 question here, drop us a line at our{" "}
                 <Link
                   to="/contact"
-                  className=" font-semibold underline-offset-2 underline hover:text-white"
+                  className=" font-semibold underline-offset-2 underline hover:text-[#d14d72b2]"
                 >
                   Contact Page
                 </Link>
               </p>
             </div>
+
+            <div className=" lg:w-2/3 aspect-video max-h-[100svh-112px] lg:pl-6 mx-auto">
+              <ImageCarousel images={images2} />
+            </div>
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 my-16 md:pb-32">
-          <div className="grid md:grid-cols-2 gap-6 p-6 bg-[#FFFBF5] rounded-md">
-            {questions.map((question, index) => (
-              <div
-                key={index}
-                className="p-6 rounded-sm border-2 border-[#FFDFDF]"
-              >
-                <dt className="text-[#001d2c] drop-shadow-md font-bold text-justify text-base md:text-lg ">
-                  {question.question}
-                </dt>
-                <dd className="text-[#001d2c] text-justify italic font-normal leading-relaxed text-sm md:text-base">
-                  {question.answer}
-                </dd>
-              </div>
-            ))}
+        <div className="bg-[#FFDFDF] pt-16 pb-32">
+          <div className="max-w-7xl mx-auto px-6 ">
+            <div className="grid md:grid-cols-2 gap-6 rounded-md">
+              {questions.map((question, index) => (
+                <div
+                  key={index}
+                  className="p-6 rounded-sm border-2 border-[#FFFBF5]"
+                >
+                  <dt className="text-[#001d2c] drop-shadow-md font-bold text-justify text-base md:text-lg ">
+                    {question.question}
+                  </dt>
+                  <dd className="text-[#001d2c] text-justify italic font-normal leading-relaxed text-sm md:text-base">
+                    {question.answer}
+                  </dd>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

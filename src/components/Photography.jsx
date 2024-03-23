@@ -26,11 +26,7 @@ const events = [
   },
 ];
 
-const images = [
-  "/images/section/9.jpg",
-  "/images/section/8.jpg",
-  "/images/section/6.jpg",
-];
+const images = ["/images/section/6.jpg"];
 
 const instagramfeed = [
   {

@@ -20,20 +20,20 @@ function About() {
             />
           </div>
 
-          <div className="max-w-xl self-center mx-auto lg:mr-auto lg:ml-0 px-6 my-8">
-            <h1 className="text-3xl md:text-6xl font-bold mb-6 text-[#001d2c]">
+          <div className="max-w-3xl lg:max-w-xl self-center mx-auto lg:mr-auto lg:ml-0 px-6 my-8">
+            <h1 className="text-3xl lg:text-6xl font-bold mb-6 text-[#001d2c]">
               Welcome to{" "}
               <span className="text-[#FF6B6B]">Wedding Filmographer</span>
             </h1>
-            <p className="text-base md:text-lg leading-relaxed text-justify">
+            <p className="text-base lg:text-lg leading-relaxed text-justify">
               We're not just filmmakers; we're storytellers. We immortalize
               emotions, weaving them into a cinematic tapestry you'll cherish.
             </p>
-            <p className="text-base md:text-lg leading-relaxed mt-4 text-justify">
+            <p className="text-base lg:text-lg leading-relaxed mt-4 text-justify">
               Step into our world, where each frame paints your love story. With
               passion and attention to detail, we craft timeless memories.
             </p>
-            <p className="text-base md:text-lg leading-relaxed mt-4 text-justify">
+            <p className="text-base lg:text-lg leading-relaxed mt-4 text-justify">
               Join us, where dreams become reality, and every "I do" is an
               eternal vow.
             </p>
@@ -42,20 +42,20 @@ function About() {
 
         <div className="lg:h-[calc(100svh-112px)] w-screen grid lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full bg-[#D14D72]">
-            <div className="flex justify-end items-center max-w-xl mx-auto h-full lg:mr-0">
+            <div className="max-w-3xl lg:max-w-xl flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
               <div className="text-center">
-                <h1 className="text-3xl md:text-6xl font-bold text-[#FFFBF5] uppercase p-6 verticaltext lg:rotate-180">
+                <h1 className="text-3xl lg:text-6xl font-bold text-[#FFFBF5] uppercase p-6 verticaltext lg:rotate-180">
                   About Us
                 </h1>
               </div>
             </div>
           </div>
 
-          <div className="max-w-xl self-center mx-auto px-6 my-8">
+          <div className="max-w-3xl lg:max-w-xl self-center mx-auto px-6 my-8">
             <h2 className="text-2xl lg:text-3xl font-semibold text-[#001d2c] mb-4 ">
               Experiences Beyond Imagining
             </h2>
-            <p className="text-base md:text-lg leading-relaxed text-justify">
+            <p className="text-base lg:text-lg leading-relaxed text-justify">
               Our journey has taken us worldwide, capturing love stories from
               Bali to the Alps. Our films resonate globally, showcasing love in
               its purest form.
@@ -64,7 +64,7 @@ function About() {
             <h2 className="text-2xl lg:text-3xl font-semibold text-[#001d2c] mb-4 mt-8">
               Crafting Memories, Not Just Videos
             </h2>
-            <p className="text-base md:text-lg leading-relaxed text-justify">
+            <p className="text-base lg:text-lg leading-relaxed text-justify">
               We craft unique cinematic experiences that capture the essence of
               your relationship. With state-of-the-art equipment and passionate
               storytellers, we weave laughter, tears, and everything in between
@@ -89,11 +89,11 @@ function About() {
             />
           </div>
           <div className="max-w-xl self-center mx-auto lg:mr-auto lg:ml-0 px-6 my-8">
-            <h1 className="text-3xl md:text-6xl font-bold mb-6 text-[#001d2c]">
+            <h1 className="text-3xl lg:text-6xl font-bold mb-6 text-[#001d2c]">
               Let's Create{" "}
               <span className="text-[#FF6B6B]">Something Magical</span>
             </h1>
-            <p className="text-base md:text-lg leading-relaxed text-justify">
+            <p className="text-base lg:text-lg leading-relaxed text-justify">
               Your wedding day is one of the most important moments of your
               life. Let us help you preserve those memories in a way that
               captures the true essence of your love story. Get in touch with us
@@ -105,20 +105,20 @@ function About() {
 
         <div className="lg:h-[calc(100svh-112px)] w-screen grid lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full bg-[#D14D72]">
-            <div className="flex justify-start lg:justify-end items-center max-w-xl mx-auto h-full lg:mr-0">
+            <div className="max-w-3xl lg:max-w-xl flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
               <div className="text-center">
-                <h1 className="text-3xl md:text-6xl font-bold text-[#FFFBF5] uppercase p-6 verticaltext lg:rotate-180">
+                <h1 className="text-3xl lg:text-6xl font-bold text-[#FFFBF5] uppercase p-6 verticaltext lg:rotate-180">
                   Founder
                 </h1>
               </div>
             </div>
           </div>
 
-          <div className="max-w-xl self-center mx-auto px-6 my-8">
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#001d2c] ">
+          <div className="max-w-3xl lg:max-w-xl self-center mx-auto px-6 my-8">
+            <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-[#001d2c] ">
               Akash Singhal
             </h2>
-            <p className="text-base md:text-lg leading-relaxed text-justify">
+            <p className="text-base lg:text-lg leading-relaxed text-justify">
               With a keen eye, the ability to use gradients, light, and colors,
               stunning creativity, and the talent to capture good frames in
               adverse situations, Akash Singhal has what it takes to be a pro
@@ -127,7 +127,7 @@ function About() {
           </div>
 
           <div className="bg-[#FFABAB]">
-            <div className="items-center p-6 flex max-w-xl mx-auto lg:ml-0 h-full justify-center ">
+            <div className="items-center p-8 lg:px-16 flex mx-auto lg:ml-0 h-full justify-center ">
               <img
                 src="../images/Akash_Singhal.png"
                 alt=""
