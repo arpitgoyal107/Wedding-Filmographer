@@ -144,7 +144,7 @@ function Gallery() {
   return (
     <>
       <ScrollToTop />
-      <section className="bg-[#FDF0F0] overflow-hidden">
+      <section className="bg-[#FFFBF5] overflow-hidden">
         <div className="pt-[112px]"></div>
         <div className=" h-[calc(100svh-112px)]">
           <ImageCarousel images={images} />

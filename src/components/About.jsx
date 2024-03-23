@@ -115,7 +115,7 @@ function About() {
           </div>
 
           <div className="max-w-xl self-center mx-auto px-6 my-8">
-            <h2 className="text-3xl md:text-6xl font-bold mb-4 text-[#001d2c] ">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#001d2c] ">
               Akash Singhal
             </h2>
             <p className="text-base md:text-lg leading-relaxed text-justify">
