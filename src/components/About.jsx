@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       <ScrollToTop />
-      <section className=" overflow-hidden">
+      <section className="overflow-hidden">
         <div className="pt-[112px]"></div>
 
         <div className=" lg:h-[calc(100svh-112px)] w-screen grid lg:grid-cols-2 bg-[#FFDFDF] overflow-hidden ">
@@ -41,19 +41,21 @@ function About() {
         </div>
 
         <div className="lg:h-[calc(100svh-112px)] w-screen grid lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
-          <div className="w-full h-full bg-[#D14D72]">
-            <div className="relative h-full w-full min-h-16 max-w-xl mx-auto">
-              <h1 className="text-3xl lg:text-7xl font-bold text-[#FFFBF5] flex uppercase  absolute right-0 px-6 py-1 top-0 bottom-0 self-center verticaltext lg:rotate-180">
-                About Us
-              </h1>
+          <div className="w-full bg-[#D14D72]">
+            <div className="flex justify-end items-center max-w-xl mx-auto h-full lg:mr-0">
+              <div className="text-center">
+                <h1 className="text-3xl md:text-6xl font-bold text-[#FFFBF5] uppercase p-6 verticaltext lg:rotate-180">
+                  About Us
+                </h1>
+              </div>
             </div>
           </div>
 
-          <div className="max-w-xl mx-auto w-full self-center p-8 my-8">
+          <div className="max-w-xl self-center mx-auto px-6 my-8">
             <h2 className="text-2xl lg:text-3xl font-semibold text-[#001d2c] mb-4 ">
               Experiences Beyond Imagining
             </h2>
-            <p className="text-base lg:text-lg leading-relaxed text-justify">
+            <p className="text-base md:text-lg leading-relaxed text-justify">
               Our journey has taken us worldwide, capturing love stories from
               Bali to the Alps. Our films resonate globally, showcasing love in
               its purest form.
@@ -62,7 +64,7 @@ function About() {
             <h2 className="text-2xl lg:text-3xl font-semibold text-[#001d2c] mb-4 mt-8">
               Crafting Memories, Not Just Videos
             </h2>
-            <p className="text-base lg:text-lg leading-relaxed text-justify">
+            <p className="text-base md:text-lg leading-relaxed text-justify">
               We craft unique cinematic experiences that capture the essence of
               your relationship. With state-of-the-art equipment and passionate
               storytellers, we weave laughter, tears, and everything in between
@@ -98,6 +100,40 @@ function About() {
               today to learn more about our services and how we can bring your
               vision to life.
             </p>
+          </div>
+        </div>
+
+        <div className="lg:h-[calc(100svh-112px)] w-screen grid lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
+          <div className="w-full bg-[#D14D72]">
+            <div className="flex justify-end items-center max-w-xl mx-auto h-full lg:mr-0">
+              <div className="text-center">
+                <h1 className="text-3xl md:text-6xl font-bold text-[#FFFBF5] uppercase p-6 verticaltext lg:rotate-180">
+                  Founder
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div className="max-w-xl self-center mx-auto px-6 my-8">
+            <h2 className="text-3xl md:text-6xl font-bold mb-4 text-[#001d2c] ">
+              Akash Singhal
+            </h2>
+            <p className="text-base md:text-lg leading-relaxed text-justify">
+              With a keen eye, the ability to use gradients, light, and colors,
+              stunning creativity, and the talent to capture good frames in
+              adverse situations, Akash Singhal has what it takes to be a pro
+              photographer & cinematographer.
+            </p>
+          </div>
+
+          <div className="bg-[#FFABAB]">
+            <div className="items-center p-6 flex max-w-xl mx-auto lg:ml-0 h-full justify-center ">
+              <img
+                src="../images/Akash_Singhal.png"
+                alt=""
+                className="max-w-64 lg:max-w-full rounded-full"
+              />
+            </div>
           </div>
         </div>
       </section>

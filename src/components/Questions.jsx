@@ -77,57 +77,61 @@ function Faq() {
           <ImageCarousel images={images} />
         </div>
 
-        <div className=" max-w-4xl grid grid-cols-3 mx-auto px-6 gap-2 my-12 md:my-32">
-          <div className=" aspect-[3/4] overflow-hidden">
-            <img
-              src="../images/section/10.jpg"
-              alt=""
-              className="h-full object-cover w-full"
-            />
+        <div className=" bg-[#D14D72] pt-32 pb-16">
+          <div className=" max-w-5xl grid grid-cols-3 mx-auto px-6 gap-2 mb-24">
+            <div className=" aspect-[3/4] overflow-hidden">
+              <img
+                src="../images/section/12.jpg"
+                alt=""
+                className="h-full object-cover w-full"
+              />
+            </div>
+            <div className=" aspect-[3/4] overflow-hidden">
+              <img
+                src="../images/section/11.jpg"
+                alt=""
+                className="h-full object-cover w-full"
+              />
+            </div>
+            <div className=" aspect-[3/4] overflow-hidden">
+              <img
+                src="../images/section/10.jpg"
+                alt=""
+                className="h-full object-cover w-full"
+              />
+            </div>
           </div>
-          <div className=" aspect-[3/4] overflow-hidden">
-            <img
-              src="../images/section/11.jpg"
-              alt=""
-              className="h-full object-cover w-full"
-            />
-          </div>
-          <div className=" aspect-[3/4] overflow-hidden">
-            <img
-              src="../images/section/12.jpg"
-              alt=""
-              className="h-full object-cover w-full"
-            />
+
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="grid md:grid-cols-2">
+              <h1 className="text-[#FFDFDF] drop-shadow-md font-bold text-3xl md:text-6xl text-center">
+                Frequently Asked Questions
+              </h1>
+              <p className=" text-base md:text-lg font-medium text-[#FFDFDF] mt-2 pl-3 self-center text-center">
+                Got a question? We're here to answer! if you don't see your
+                question here, drop us a line at our{" "}
+                <Link
+                  to="/contact"
+                  className=" font-semibold underline-offset-2 underline hover:text-white"
+                >
+                  Contact Page
+                </Link>
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 mb-16 md:pb-32">
-          <div className="grid md:grid-cols-2 md:mb-16 mb-8">
-            <h1 className="text-[#624B14] drop-shadow-md font-bold text-3xl md:text-6xl text-center">
-              Frequently Asked Questions
-            </h1>
-            <p className=" text-base md:text-lg font-medium text-[#B19470] mt-2 pl-3 self-center text-center">
-              Got a question? We're here to answer! if you don't see your
-              question here, drop us a line at our{" "}
-              <Link
-                to="/contact"
-                className="text-[#624b14e3] font-semibold underline-offset-2 underline hover:text-[#624B14]"
-              >
-                Contact Page
-              </Link>
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 px-6 ">
+        <div className="max-w-7xl mx-auto px-6 my-16 md:pb-32">
+          <div className="grid md:grid-cols-2 gap-6 p-6 bg-[#FFFBF5] rounded-md">
             {questions.map((question, index) => (
               <div
                 key={index}
-                className="bg-[#DED0B6] p-6 rounded-sm border-2 border-white"
+                className="p-6 rounded-sm border-2 border-[#FFDFDF]"
               >
-                <dt className="text-[#624B14] drop-shadow-md font-bold text-justify text-base md:text-lg ">
+                <dt className="text-[#001d2c] drop-shadow-md font-bold text-justify text-base md:text-lg ">
                   {question.question}
                 </dt>
-                <dd className="text-[#624B14] text-justify italic font-normal leading-relaxed text-sm md:text-base">
+                <dd className="text-[#001d2c] text-justify italic font-normal leading-relaxed text-sm md:text-base">
                   {question.answer}
                 </dd>
               </div>
