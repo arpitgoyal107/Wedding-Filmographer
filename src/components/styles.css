@@ -1,0 +1,9 @@
+.verticaltext {
+    writing-mode: vertical-rl;
+}
+
+@media screen and (max-width: 1024px) {
+    .verticaltext {
+        writing-mode: horizontal-tb;
+    }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import ScrollToTop from "./Card/ScrollToTop";
-import ImageCarousel from "./Card/ImageCarousel";
+import "./styles.css";
 
 const images = ["/images/section/7.jpg"];
 
@@ -29,11 +29,11 @@ function About() {
               We're not just filmmakers; we're storytellers. We immortalize
               emotions, weaving them into a cinematic tapestry you'll cherish.
             </p>
-            <p className="text-base md:text-lg leading-relaxed text-justify mt-4">
+            <p className="text-base md:text-lg leading-relaxed mt-4 text-justify">
               Step into our world, where each frame paints your love story. With
               passion and attention to detail, we craft timeless memories.
             </p>
-            <p className="text-base md:text-lg leading-relaxed text-justify mt-4">
+            <p className="text-base md:text-lg leading-relaxed mt-4 text-justify">
               Join us, where dreams become reality, and every "I do" is an
               eternal vow.
             </p>
@@ -42,21 +42,18 @@ function About() {
 
         <div className="lg:h-[calc(100svh-112px)] w-screen grid lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full h-full bg-[#D14D72]">
-            <div className="relative h-full w-full">
-              <h1
-                className=" text-7xl font-bold text-[#FFFBF5] flex uppercase rotate-180 absolute right-0 px-12 py-3 top-0 bottom-0 self-center"
-                style={{ writingMode: "vertical-rl" }}
-              >
+            <div className="relative h-full w-full min-h-16 max-w-xl mx-auto">
+              <h1 className="text-3xl lg:text-7xl font-bold text-[#FFFBF5] flex uppercase  absolute right-0 px-6 py-1 top-0 bottom-0 self-center verticaltext lg:rotate-180">
                 About Us
               </h1>
             </div>
           </div>
 
-          <div className="w-full self-center p-8 my-8">
-            <h2 className="text-2xl lg:text-3xl font-semibold text-[#001d2c] mb-4">
+          <div className="max-w-xl mx-auto w-full self-center p-8 my-8">
+            <h2 className="text-2xl lg:text-3xl font-semibold text-[#001d2c] mb-4 ">
               Experiences Beyond Imagining
             </h2>
-            <p className="text-base lg:text-lg leading-relaxed">
+            <p className="text-base lg:text-lg leading-relaxed text-justify">
               Our journey has taken us worldwide, capturing love stories from
               Bali to the Alps. Our films resonate globally, showcasing love in
               its purest form.
@@ -65,7 +62,7 @@ function About() {
             <h2 className="text-2xl lg:text-3xl font-semibold text-[#001d2c] mb-4 mt-8">
               Crafting Memories, Not Just Videos
             </h2>
-            <p className="text-base lg:text-lg leading-relaxed">
+            <p className="text-base lg:text-lg leading-relaxed text-justify">
               We craft unique cinematic experiences that capture the essence of
               your relationship. With state-of-the-art equipment and passionate
               storytellers, we weave laughter, tears, and everything in between
