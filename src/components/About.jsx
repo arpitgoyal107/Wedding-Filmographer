@@ -105,7 +105,7 @@ function About() {
 
         <div className="lg:h-[calc(100svh-112px)] w-screen grid lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full bg-[#D14D72]">
-            <div className="flex justify-end items-center max-w-xl mx-auto h-full lg:mr-0">
+            <div className="flex justify-start lg:justify-end items-center max-w-xl mx-auto h-full lg:mr-0">
               <div className="text-center">
                 <h1 className="text-3xl md:text-6xl font-bold text-[#FFFBF5] uppercase p-6 verticaltext lg:rotate-180">
                   Founder
@@ -131,7 +131,7 @@ function About() {
               <img
                 src="../images/Akash_Singhal.png"
                 alt=""
-                className="max-w-64 lg:max-w-full rounded-full"
+                className="max-w-48  lg:max-w-full rounded-full"
               />
             </div>
           </div>
