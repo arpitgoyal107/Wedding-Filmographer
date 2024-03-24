@@ -11,7 +11,7 @@ function About() {
       <section className="overflow-hidden">
         <div className="pt-[112px]"></div>
 
-        <div className=" lg:h-[calc(100svh-112px)] w-screen grid lg:grid-cols-2 bg-[#FFDFDF] overflow-hidden ">
+        <div className=" lg:min-h-[calc(100svh-112px)] w-screen grid lg:grid-cols-2 bg-[#FFDFDF] overflow-hidden ">
           <div className="overflow-hidden h-[calc(100svh-112px)]">
             <img
               src="/images/section/16.jpg"
@@ -20,7 +20,7 @@ function About() {
             />
           </div>
 
-          <div className=" lg:max-w-[40rem] self-center lg:mr-auto lg:ml-0 px-6 my-8">
+          <div className=" lg:max-w-[40rem] self-center lg:mr-auto lg:ml-0 px-6 my-8 ">
             <h1 className="text-3xl lg:text-6xl font-bold mb-6 text-[#001d2c]">
               Welcome to{" "}
               <span className="text-[#FF6B6B]">Wedding Filmographer</span>
@@ -40,38 +40,41 @@ function About() {
           </div>
         </div>
 
-        <div className="lg:h-[calc(100vh-112px)] w-screen grid lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
+        <div className="lg:min-h-[calc(100vh-112px)] w-screen grid grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full bg-[#D14D72]">
-            <div className="lg:max-w-[40rem] flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
+            <div className="lg:max-w-[40rem] flex justify-end items-center mx-auto h-full lg:mr-0">
               <div className="text-center">
-                <h1 className="text-3xl lg:text-6xl font-bold text-[#FFFBF5] uppercase p-6 verticaltext lg:rotate-180">
+                <h1 className="text-3xl lg:text-6xl font-bold text-[#FFFBF5] uppercase p-6 onlyverticaltext rotate-180">
                   About Us
                 </h1>
               </div>
             </div>
           </div>
 
-          <div className=" lg:max-w-[40rem] self-center mx-auto px-6 my-8">
-            <h2 className="text-2xl lg:text-3xl font-semibold text-[#001d2c] mb-4 ">
-              Experiences Beyond Imagining
-            </h2>
-            <p className="text-base lg:text-lg leading-relaxed text-justify">
-              Our journey has taken us worldwide, capturing love stories from
-              Bali to the Alps. Our films resonate globally, showcasing love in
-              its purest form.
-            </p>
+          <div className="flex items-center justify-center min-h-[calc(100vh-112px)] col-span-2 lg:col-span-1 overflow-hidden">
+            <div className="lg:max-w-[40rem] mx-auto px-6 my-8 ">
+              <h2 className="text-2xl lg:text-3xl font-semibold text-[#001d2c] mb-4">
+                Experiences Beyond Imagining
+              </h2>
+              <p className="text-base lg:text-lg leading-relaxed text-justify">
+                Our journey has taken us worldwide, capturing love stories from
+                Bali to the Alps. Our films resonate globally, showcasing love
+                in its purest form.
+              </p>
 
-            <h2 className="text-2xl lg:text-3xl font-semibold text-[#001d2c] mb-4 mt-8">
-              Crafting Memories, Not Just Videos
-            </h2>
-            <p className="text-base lg:text-lg leading-relaxed text-justify">
-              We craft unique cinematic experiences that capture the essence of
-              your relationship. With state-of-the-art equipment and passionate
-              storytellers, we weave laughter, tears, and everything in between
-              into beautiful narratives.
-            </p>
+              <h2 className="text-2xl lg:text-3xl font-semibold text-[#001d2c] mb-4 mt-8">
+                Crafting Memories, Not Just Videos
+              </h2>
+              <p className="text-base lg:text-lg leading-relaxed text-justify">
+                We craft unique cinematic experiences that capture the essence
+                of your relationship. With state-of-the-art equipment and
+                passionate storytellers, we weave laughter, tears, and
+                everything in between into beautiful narratives.
+              </p>
+            </div>
           </div>
-          <div className="overflow-hidden h-[calc(100vh-112px)] bg-[#FFABAB]">
+
+          <div className="overflow-hidden h-[calc(100vh-112px)] bg-[#FFABAB] col-span-3 lg:col-span-1">
             <img
               src="/images/section/6.jpg"
               className="w-full h-full object-cover"
@@ -80,30 +83,32 @@ function About() {
           </div>
         </div>
 
-        <div className="h-[calc(100vh-112px)] w-screen grid grid-cols-2 bg-[#FDF0F0]">
-          <div className="overflow-hidden h-full">
+        <div className="min-h-[calc(100vh-112px)] w-screen grid grid-cols-2 bg-[#FDF0F0]">
+          <div className="h-[calc(100vh-112px)]">
             <img
               src="/images/section/4.jpg"
               className="w-full h-full object-cover"
               alt=""
             />
           </div>
-          <div className="max-w-[40rem] self-center mx-auto lg:mr-auto lg:ml-0 px-6 my-8">
-            <h1 className="text-3xl lg:text-6xl font-bold mb-6 text-[#001d2c]">
-              Let's Create{" "}
-              <span className="text-[#FF6B6B]">Something Magical</span>
-            </h1>
-            <p className="text-base lg:text-lg leading-relaxed text-justify">
-              Your wedding day is one of the most important moments of your
-              life. Let us help you preserve those memories in a way that
-              captures the true essence of your love story. Get in touch with us
-              today to learn more about our services and how we can bring your
-              vision to life.
-            </p>
+          <div className="flex items-center justify-center min-h-[calc(100vh-112px)] overflow-hidden">
+            <div className="max-w-[40rem] mx-auto lg:mr-auto lg:ml-0 px-6 my-8">
+              <h1 className="text-3xl lg:text-6xl font-bold mb-6 text-[#001d2c]">
+                Let's Create{" "}
+                <span className="text-[#FF6B6B]">Something Magical</span>
+              </h1>
+              <p className="text-base lg:text-lg leading-relaxed text-justify">
+                Your wedding day is one of the most important moments of your
+                life. Let us help you preserve those memories in a way that
+                captures the true essence of your love story. Get in touch with
+                us today to learn more about our services and how we can bring
+                your vision to life.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="lg:h-[calc(100vh-112px)] w-screen grid grid-cols-2 lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
+        <div className="lg:min-h-[calc(100vh-112px)] w-screen grid grid-cols-2 lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full bg-[#D14D72] col-span-2 lg:col-span-1">
             <div className="lg:max-w-xl flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
               <div className="text-center">

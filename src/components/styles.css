@@ -8,6 +8,11 @@
     }
 }
 
+.onlyverticaltext {
+    writing-mode: vertical-rl;
+}
+
+
 .hello{
     
 background-color: #FFDFDF;

@@ -19,7 +19,7 @@ function Contact() {
           <ImageCarousel images={images} />
         </div>
 
-        <div className="w-screen lg:h-[calc(100svh-112px)] grid lg:grid-cols-2">
+        <div className="w-screen lg:min-h-[calc(100svh-112px)] grid lg:grid-cols-2">
           <div className="w-full h-full bg-[#D14D72]">
             <div className="max-w-[40rem] h-full bg-[#FFDFDF] relative lg:mr-0 lg:ml-auto mx-auto">
               <div className="absolute z-0 left-0 w-1/3 h-full bg-[#D14D72]"></div>
@@ -86,7 +86,7 @@ function Contact() {
           </div>
         </div>
 
-        <div className="w-screen lg:h-[calc(100svh-112px)] grid lg:grid-cols-2">
+        <div className="w-screen lg:min-h-[calc(100svh-112px)] grid lg:grid-cols-2">
           <div className="w-full h-full bg-[#FDF0F0] flex justify-center items-center">
             <div class="max-w-[40rem] w-full mx-auto lg:mr-0 lg:ml-auto px-6">
               <div className="mb-16">
