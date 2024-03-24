@@ -20,7 +20,7 @@ function About() {
             />
           </div>
 
-          <div className="max-w-3xl lg:max-w-xl self-center mx-auto lg:mr-auto lg:ml-0 px-6 my-8">
+          <div className="max-w-3xl lg:max-w-[40rem] self-center mx-auto lg:mr-auto lg:ml-0 px-6 my-8">
             <h1 className="text-3xl lg:text-6xl font-bold mb-6 text-[#001d2c]">
               Welcome to{" "}
               <span className="text-[#FF6B6B]">Wedding Filmographer</span>
@@ -42,7 +42,7 @@ function About() {
 
         <div className="lg:h-[calc(100svh-112px)] w-screen grid lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full bg-[#D14D72]">
-            <div className="max-w-3xl lg:max-w-xl flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
+            <div className="max-w-3xl lg:max-w-[40rem] flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
               <div className="text-center">
                 <h1 className="text-3xl lg:text-6xl font-bold text-[#FFFBF5] uppercase p-6 verticaltext lg:rotate-180">
                   About Us
@@ -51,7 +51,7 @@ function About() {
             </div>
           </div>
 
-          <div className="max-w-3xl lg:max-w-xl self-center mx-auto px-6 my-8">
+          <div className="max-w-3xl lg:max-w-[40rem] self-center mx-auto px-6 my-8">
             <h2 className="text-2xl lg:text-3xl font-semibold text-[#001d2c] mb-4 ">
               Experiences Beyond Imagining
             </h2>
@@ -88,7 +88,7 @@ function About() {
               alt=""
             />
           </div>
-          <div className="max-w-xl self-center mx-auto lg:mr-auto lg:ml-0 px-6 my-8">
+          <div className="max-w-[40rem] self-center mx-auto lg:mr-auto lg:ml-0 px-6 my-8">
             <h1 className="text-3xl lg:text-6xl font-bold mb-6 text-[#001d2c]">
               Let's Create{" "}
               <span className="text-[#FF6B6B]">Something Magical</span>
@@ -114,7 +114,7 @@ function About() {
             </div>
           </div>
 
-          <div className="max-w-3xl lg:max-w-xl self-center mx-auto px-6 my-8">
+          <div className="max-w-3xl lg:max-w-[40rem] self-center mx-auto px-6 my-8">
             <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-[#001d2c] ">
               Akash Singhal
             </h2>
