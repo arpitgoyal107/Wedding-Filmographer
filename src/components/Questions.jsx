@@ -107,7 +107,7 @@ function Faq() {
           </div>
         </div>
 
-        <div className="bg-[#FDF0F0] pt-16 pb-32">
+        <div className="bg-[#FDF0F0] py-16 lg:pb-32">
           <div className="max-w-7xl mx-auto px-6 ">
             <div className="grid md:grid-cols-2 gap-6 rounded-md">
               {questions.map((question, index) => (

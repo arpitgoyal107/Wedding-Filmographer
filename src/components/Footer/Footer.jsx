@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ContactForm from "./../SubComponents/ContactForm";
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-[#001d2c] text-[#FFFBF5] py-12 overflow-hidden">
       <div className="container mx-auto grid grid-cols-3 gap-8">
         {/* Get in touch */}
         <div className="col-span-1 flex flex-col justify-center items-center">
@@ -11,7 +12,8 @@ function Footer() {
           <hr className="w-16 border-gray-500 mb-4" />
         </div>
         {/* Form */}
-        <form className="col-span-1 flex flex-col space-y-4">
+        <ContactForm />
+        {/* <form className="col-span-1 flex flex-col space-y-4">
           <input
             type="text"
             placeholder="Your Name*"
@@ -32,7 +34,7 @@ function Footer() {
           <button className="bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition duration-300">
             Send Message
           </button>
-        </form>
+        </form> */}
         {/* Social icons */}
         <div className="col-span-1 flex justify-center items-center space-x-4">
           <Link to="#">

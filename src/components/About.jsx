@@ -20,7 +20,7 @@ function About() {
             />
           </div>
 
-          <div className="max-w-3xl lg:max-w-[40rem] self-center mx-auto lg:mr-auto lg:ml-0 px-6 my-8">
+          <div className=" lg:max-w-[40rem] self-center lg:mr-auto lg:ml-0 px-6 my-8">
             <h1 className="text-3xl lg:text-6xl font-bold mb-6 text-[#001d2c]">
               Welcome to{" "}
               <span className="text-[#FF6B6B]">Wedding Filmographer</span>
@@ -42,7 +42,7 @@ function About() {
 
         <div className="lg:h-[calc(100svh-112px)] w-screen grid lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full bg-[#D14D72]">
-            <div className="max-w-3xl lg:max-w-[40rem] flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
+            <div className="lg:max-w-[40rem] flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
               <div className="text-center">
                 <h1 className="text-3xl lg:text-6xl font-bold text-[#FFFBF5] uppercase p-6 verticaltext lg:rotate-180">
                   About Us
@@ -51,7 +51,7 @@ function About() {
             </div>
           </div>
 
-          <div className="max-w-3xl lg:max-w-[40rem] self-center mx-auto px-6 my-8">
+          <div className=" lg:max-w-[40rem] self-center mx-auto px-6 my-8">
             <h2 className="text-2xl lg:text-3xl font-semibold text-[#001d2c] mb-4 ">
               Experiences Beyond Imagining
             </h2>
@@ -103,9 +103,9 @@ function About() {
           </div>
         </div>
 
-        <div className="lg:h-[calc(100svh-112px)] w-screen grid lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
-          <div className="w-full bg-[#D14D72]">
-            <div className="max-w-3xl lg:max-w-xl flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
+        <div className="lg:h-[calc(100svh-112px)] w-screen grid grid-cols-2 lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
+          <div className="w-full bg-[#D14D72] col-span-2 lg:col-span-1">
+            <div className="lg:max-w-xl flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
               <div className="text-center">
                 <h1 className="text-3xl lg:text-6xl font-bold text-[#FFFBF5] uppercase p-6 verticaltext lg:rotate-180">
                   Founder
@@ -127,11 +127,11 @@ function About() {
           </div>
 
           <div className="bg-[#FFABAB]">
-            <div className="items-center p-8 lg:px-16 flex mx-auto lg:ml-0 h-full justify-center ">
+            <div className="max-w-[40rem] items-center p-6 pr-10 flex mx-auto lg:ml-0 h-full justify-center ">
               <img
                 src="../images/Akash_Singhal.png"
                 alt=""
-                className="max-w-48  lg:max-w-full rounded-full"
+                className="lg:max-w-full rounded-full"
               />
             </div>
           </div>
