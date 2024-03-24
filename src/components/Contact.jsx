@@ -33,7 +33,7 @@ function Contact() {
           </div>
 
           <div className="w-full h-full bg-[#FFDFDF] flex justify-center items-center">
-            <div class="max-w-xl w-full mx-auto lg:ml-0 lg:mr-auto px-6">
+            <div class="max-w-[40rem] w-full mx-auto lg:ml-0 lg:mr-auto px-6">
               <div class="mb-16">
                 <h1 class="font-bold text-sm md:text-lg text-[#d14d72d7] mt-6">
                   Contact Us

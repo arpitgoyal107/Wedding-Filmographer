@@ -40,7 +40,7 @@ function About() {
           </div>
         </div>
 
-        <div className="lg:h-[calc(100svh-112px)] w-screen grid lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
+        <div className="lg:h-[calc(100vh-112px)] w-screen grid lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full bg-[#D14D72]">
             <div className="lg:max-w-[40rem] flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
               <div className="text-center">
@@ -71,7 +71,7 @@ function About() {
               into beautiful narratives.
             </p>
           </div>
-          <div className="overflow-hidden h-[calc(100svh-112px)] bg-[#FFABAB]">
+          <div className="overflow-hidden h-[calc(100vh-112px)] bg-[#FFABAB]">
             <img
               src="/images/section/6.jpg"
               className="w-full h-full object-cover"
@@ -80,7 +80,7 @@ function About() {
           </div>
         </div>
 
-        <div className="h-[calc(100svh-112px)] w-screen grid grid-cols-2 bg-[#FDF0F0]">
+        <div className="h-[calc(100vh-112px)] w-screen grid grid-cols-2 bg-[#FDF0F0]">
           <div className="overflow-hidden h-full">
             <img
               src="/images/section/4.jpg"
@@ -103,7 +103,7 @@ function About() {
           </div>
         </div>
 
-        <div className="lg:h-[calc(100svh-112px)] w-screen grid grid-cols-2 lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
+        <div className="lg:h-[calc(100vh-112px)] w-screen grid grid-cols-2 lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full bg-[#D14D72] col-span-2 lg:col-span-1">
             <div className="lg:max-w-xl flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
               <div className="text-center">
