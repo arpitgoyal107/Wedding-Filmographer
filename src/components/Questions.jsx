@@ -1,6 +1,6 @@
 import React from "react";
-import ScrollToTop from "./Card/ScrollToTop";
-import ImageCarousel from "./Card/ImageCarousel";
+import ScrollToTop from "./SubComponents/ScrollToTop";
+import ImageCarousel from "./SubComponents/ImageCarousel";
 import { Link } from "react-router-dom";
 
 const questions = [
@@ -107,7 +107,7 @@ function Faq() {
           </div>
         </div>
 
-        <div className="bg-[#FFDFDF] pt-16 pb-32">
+        <div className="bg-[#FDF0F0] pt-16 pb-32">
           <div className="max-w-7xl mx-auto px-6 ">
             <div className="grid md:grid-cols-2 gap-6 rounded-md">
               {questions.map((question, index) => (

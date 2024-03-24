@@ -1,38 +1,13 @@
 import React from "react";
-import ScrollToTop from "./Card/ScrollToTop";
-import ImageCarousel from "./Card/ImageCarousel";
+import ScrollToTop from "./SubComponents/ScrollToTop";
+import ImageCarousel from "./SubComponents/ImageCarousel";
+import ContactForm from "./SubComponents/ContactForm";
 
 const images = ["/images/section/14.jpg"];
 
-const images2 = ["/images/section/17.jpg"];
+const images2 = ["/images/section/17.jpg", "/images/section/4.jpg"];
 
-const images3 = ["/images/section/16.jpg"];
-
-const handleSubmit = async (e) => {
-  e.preventDefault();
-
-  const formData = new FormData(e.target);
-  const data = Object.fromEntries(formData.entries());
-
-  try {
-    const response = await fetch("http://localhost:3001/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
-    if (response.ok) {
-      console.log("Email sent successfully");
-      // Optionally, reset the form after successful submission
-      e.target.reset();
-    } else {
-      console.error("Failed to send email");
-    }
-  } catch (error) {
-    console.error("Error:", error);
-  }
-};
+const images3 = ["/images/section/18.jpg", "/images/section/16.jpg"];
 
 function Contact() {
   return (
@@ -47,10 +22,10 @@ function Contact() {
         <div className="w-screen lg:h-[calc(100svh-112px)] grid lg:grid-cols-2">
           <div className="w-full h-full bg-[#D14D72]">
             <div className="max-w-[40rem] h-full bg-[#FFDFDF] relative lg:mr-0 lg:ml-auto mx-auto">
-              <div className="absolute left-0 w-1/3 h-full bg-[#D14D72]"></div>
+              <div className="absolute z-0 left-0 w-1/3 h-full bg-[#D14D72]"></div>
 
-              <div className="w-full flex h-full justify-center items-center ">
-                <div className="w-full aspect-video m-6 rounded-md overflow-hidden">
+              <div className="w-full flex h-full justify-center items-center relative z-[1] ">
+                <div className="w-full aspect-video my-12 mx-6 rounded-md overflow-hidden bg-[#FFDFDF]">
                   <ImageCarousel images={images2} />
                 </div>
               </div>
@@ -126,96 +101,16 @@ function Contact() {
                 </h1>
               </div>
 
-              <form className="my-6" onSubmit={handleSubmit}>
-                <div className="flex flex-col">
-                  <label for="name" className="hidden">
-                    Full Name
-                  </label>
-                  <input
-                    type="name"
-                    autoComplete="off"
-                    name="name"
-                    id="name"
-                    placeholder="Your Name*"
-                    className=" w-full py-3 px-3 rounded-lg bg-white border border-[#D14D72D7] text-[#D14D72] font-semibold focus:border-[#D14D72] focus:outline-none"
-                    required
-                  />
-                  <p className="p-2 text-sm text-[#D14D72D7]">
-                    Please input your name.
-                  </p>
-                </div>
-
-                <div className=" grid grid-cols-2 gap-12 mt-3">
-                  <div className="flex flex-col ">
-                    <label for="tel" className="hidden">
-                      Number
-                    </label>
-                    <input
-                      type="tel"
-                      autoComplete="off"
-                      name="tel"
-                      id="tel"
-                      placeholder="Contact Number*"
-                      className="w-full py-3 px-3 rounded-lg bg-white border border-[#D14D72D7] text-[#D14D72] font-semibold focus:border-[#D14D72] focus:outline-none"
-                      required
-                    />
-                    <p className="p-2 text-sm text-[#D14D72D7]">
-                      Please input a phone number.
-                    </p>
-                  </div>
-
-                  <div className="flex flex-col">
-                    <label for="email" className="hidden">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      autoComplete="off"
-                      name="email"
-                      id="email"
-                      placeholder="Email Address*"
-                      className="w-full py-3 px-3 rounded-lg bg-white border border-[#D14D72D7] text-[#D14D72] font-semibold focus:border-[#D14D72] focus:outline-none"
-                      required
-                    />
-                    <p className="p-2 text-sm text-[#D14D72D7]">
-                      Please input your email address.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex flex-col mt-3">
-                  <label for="Event_Details" className="hidden">
-                    Event Details
-                  </label>
-                  <textarea
-                    autoComplete="off"
-                    name="message"
-                    id="Event_Details"
-                    rows="2"
-                    className="w-full py-3 px-3 rounded-lg bg-white border border-[#D14D72D7] text-[#D14D72] font-semibold focus:border-[#D14D72] focus:outline-none"
-                    placeholder="Message"
-                  />
-                  <p className="p-2 text-sm text-[#D14D72D7]">
-                    Any special requirements or anything you want to mention?
-                  </p>
-                </div>
-
-                <button
-                  type="submit"
-                  className="min-w-28 bg-white text-[#D14D72D7] border-[#D14D72D7] border-2 font-bold p-3 rounded-md mt-6 hover:bg-[#D14D72] hover:text-white transition ease-in-out duration-300"
-                >
-                  Send
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
 
           <div className="w-full h-full bg-[#FFABAB]">
             <div className="max-w-[40rem] h-full bg-[#FDF0F0] relative lg:ml-0 lg:mr-auto mx-auto">
-              <div className=" absolute right-0 w-1/3 h-full bg-[#FFABAB] "></div>
+              <div className=" absolute z-0 right-0 w-1/3 h-full bg-[#FFABAB] "></div>
 
-              <div className=" h-full w-full flex justify-center items-center">
-                <div className="w-full aspect-video m-6 rounded-md overflow-hidden">
+              <div className=" h-full w-full flex justify-center items-center relative z-[1]">
+                <div className="w-full aspect-video my-12 mx-6 rounded-md overflow-hidden bg-[#FDF0F0]">
                   <ImageCarousel images={images3} />
                 </div>
               </div>

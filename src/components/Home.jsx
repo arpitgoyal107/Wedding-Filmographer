@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ImageCarousel from "./Card/ImageCarousel";
-import ScrollToTop from "./Card/ScrollToTop";
+import ImageCarousel from "./SubComponents/ImageCarousel";
+import ScrollToTop from "./SubComponents/ScrollToTop";
 import Gallery from "./Photography";
 
 const events = [

@@ -1,5 +1,5 @@
 import React from "react";
-import ScrollToTop from "./Card/ScrollToTop";
+import ScrollToTop from "./SubComponents/ScrollToTop";
 import "./styles.css";
 
 const images = ["/images/section/7.jpg"];
