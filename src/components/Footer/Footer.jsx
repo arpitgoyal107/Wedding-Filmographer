@@ -10,8 +10,8 @@ import {
 
 const Footer = () => {
   return (
-    <>
-      <footer className="bg-gradient-to-l from-[#D14D72] via-[#FFABAB] to-[#D14D72] text-white relative">
+    <footer>
+      <section className="bg-gradient-to-l from-[#D14D72] via-[#FFABAB] to-[#D14D72] text-white relative">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 px-6 py-6 overflow-hidden relative z-[1] gap-4">
           <div className="">
             <div className="w-52 mx-auto md:ml-0 ">
@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-6 md:mt-0">
+          <div className="mt-4 md:mt-0">
             <h1 className="text-lg md:text-3xl font-bold text-center">
               Social Media
             </h1>
@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-6 md:mt-0">
+          <div className="mt-4 md:mt-0">
             <h1 className="text-lg md:text-3xl font-bold text-center md:text-right">
               Get in touch
             </h1>
@@ -96,8 +96,8 @@ const Footer = () => {
             alt=""
           />
         </div>
-      </footer>
-      <footer className="bg-[#D14D72] text-white">
+      </section>
+      <section className="bg-[#D14D72] text-white">
         <div className="py-2 max-w-7xl px-6 mx-auto">
           <p className="text-center text-white text-sm md:text-base">
             &copy; 2024 Wedding Filmographer | All Rights Reserved | Crafted
@@ -112,8 +112,8 @@ const Footer = () => {
             </a>
           </p>
         </div>
-      </footer>
-    </>
+      </section>
+    </footer>
   );
 };
 

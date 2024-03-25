@@ -22,7 +22,7 @@ function Contact() {
         <div className="w-screen lg:min-h-[calc(100svh-112px)] grid lg:grid-cols-2">
           <div className="w-full h-full bg-[#D14D72]">
             <div className="max-w-[40rem] h-full bg-[#FFDFDF] relative lg:mr-0 lg:ml-auto mx-auto">
-              <div className="absolute z-0 left-0 w-1/3 h-full bg-[#D14D72]"></div>
+              <div className="absolute right-0 z-0 lg:left-0 w-1/3 h-full bg-[#D14D72]"></div>
 
               <div className="w-full flex h-full justify-center items-center relative z-[1] ">
                 <div className="w-full aspect-video my-12 mx-6 rounded-md overflow-hidden bg-[#FFDFDF]">
@@ -107,7 +107,7 @@ function Contact() {
 
           <div className="w-full h-full bg-[#FFABAB]">
             <div className="max-w-[40rem] h-full bg-[#FDF0F0] relative lg:ml-0 lg:mr-auto mx-auto">
-              <div className=" absolute z-0 lg:right-0 w-1/3 h-full bg-[#FFABAB] "></div>
+              <div className=" absolute z-0 right-0 w-1/3 h-full bg-[#FFABAB] "></div>
 
               <div className=" h-full w-full flex justify-center items-center relative z-[1]">
                 <div className="w-full aspect-video my-12 mx-6 rounded-md overflow-hidden bg-[#FDF0F0]">
