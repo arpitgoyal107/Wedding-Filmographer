@@ -10,86 +10,91 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-l from-[#FFDFDF] from-10% via-[#FFABAB] via-50% to-[#D14D72] text-white">
-      <div className="max-w-7xl py-8 px-6 mx-auto flex flex-col space-y-6 md:flex-row md:justify-between md:items-center">
-        <div className="w-full md:w-64">
-          <img src="/images/White-1.png" alt="" />
-        </div>
-        <div className="flex justify-center space-x-4 md:order-3">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white bg-gradient-to-l from-[#FFABAB] from-10% to-[#D14D72] p-3 rounded-full"
-          >
-            <FaFacebookF />
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white bg-gradient-to-l from-[#FFABAB] from-10% to-[#D14D72] p-3 rounded-full"
-          >
-            <FaTwitter />
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white bg-gradient-to-l from-[#FFABAB] from-10% to-[#D14D72] p-3 rounded-full"
-          >
-            <FaLinkedinIn />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white bg-gradient-to-l from-[#FFABAB] from-10% to-[#D14D72] p-3 rounded-full"
-          >
-            <FaInstagram />
-          </a>
-        </div>
-        <nav className="flex flex-col items-center md:flex-row md:items-center md:order-1 space-y-4 md:space-y-0 md:space-x-4">
-          <a href="/" className="text-white hover:underline">
-            Home
-          </a>
-          <a href="/about" className="text-white hover:underline">
-            About
-          </a>
-          <a href="/services" className="text-white hover:underline">
-            Services
-          </a>
-          <a href="/team" className="text-white hover:underline">
-            Team
-          </a>
-          <a href="/contact" className="text-white hover:underline">
-            Contact
-          </a>
-        </nav>
-        <div className="text-center md:text-right md:order-2">
-          <p className="text-white text-sm mb-2">Get in Touch:</p>
-          <div className="flex items-center justify-center md:justify-end space-x-2">
+    <footer className="bg-gradient-to-l from-[#D14D72] via-[#FFABAB] to-[#D14D72] text-white relative">
+      <div className=" max-w-7xl mx-auto overflow-hidden p-3">
+        <div className="w-full flex  lg:flex-row flex-wrap justify-between">
+          <div className="py-6 basis-1/4">
+            <img src="/images/White.png" className="px-6" alt="" />
+          </div>
+
+          <div className="py-6 basis-1/4">
+            <h1 className="text-3xl font-bold text-center ">Social Media</h1>
+            <div className="flex justify-center space-x-4 mt-2">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white bg-gradient-to-l from-[#FFABAB] from-10% to-[#D14D72] p-3 rounded-full"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white bg-gradient-to-l from-[#FFABAB] from-10% to-[#D14D72] p-3 rounded-full"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white bg-gradient-to-l from-[#FFABAB] from-10% to-[#D14D72] p-3 rounded-full"
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white bg-gradient-to-l from-[#FFABAB] from-10% to-[#D14D72] p-3 rounded-full"
+              >
+                <FaInstagram />
+              </a>
+            </div>
+          </div>
+
+          <div className="py-6 text-right basis-1/4">
+            <h1 className="text-3xl font-bold">Get in touch:</h1>
             <a
-              href="tel:+1234567890"
-              className="text-white flex items-center hover:underline"
+              href="tel:+917696331130"
+              className="flex justify-end text-white hover:underline mt-2"
             >
-              <FaPhone className="mr-1" />
-              <span>(123) 456-7890</span>
+              <FaPhone className="mr-2 mt-1" />
+              <span>+91-76963-31130</span>
             </a>
             <a
-              href="mailto:info@weddingfilmographer.com"
-              className="text-white flex items-center hover:underline"
+              href="mailto:weddingfilmographer@gmail.com"
+              className="flex justify-end text-white hover:underline mt-2"
             >
-              <FaEnvelope className="mr-1" />
-              <span>info@weddingfilmographer.com</span>
+              <FaEnvelope className="mr-2 mt-1" />
+              <span>weddingfilmographer@gmail.com</span>
             </a>
           </div>
         </div>
-      </div>
 
-      <p className="text-center text-white text-sm">
-        ©2024 Wedding Filmographer | All Rights Reserved
-      </p>
+        <div className="mt-3">
+          <p className="text-center text-white text-base">
+            &copy; 2024 Wedding Filmographer | All Rights Reserved | Crafted
+            with &hearts; by{" "}
+            <a
+              href="https://www.linkedin.com/in/arpitgoyal107/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:underline"
+            >
+              Arpit Goyal
+            </a>
+          </p>
+        </div>
+      </div>
+      <div className="absolute top-0 h-full right-0 opacity-40">
+        <img src="/images/gold-rings.png" className="h-full" alt="" />
+      </div>
+      {/* <div className="absolute top-0 h-full left-0 opacity-40 rotate-180">
+        <img src="/images/gold-rings.png" className="h-full" alt="" />
+      </div> */}
     </footer>
   );
 };

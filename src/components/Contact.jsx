@@ -107,7 +107,7 @@ function Contact() {
 
           <div className="w-full h-full bg-[#FFABAB]">
             <div className="max-w-[40rem] h-full bg-[#FDF0F0] relative lg:ml-0 lg:mr-auto mx-auto">
-              <div className=" absolute z-0 right-0 w-1/3 h-full bg-[#FFABAB] "></div>
+              <div className=" absolute z-0 lg:right-0 w-1/3 h-full bg-[#FFABAB] "></div>
 
               <div className=" h-full w-full flex justify-center items-center relative z-[1]">
                 <div className="w-full aspect-video my-12 mx-6 rounded-md overflow-hidden bg-[#FDF0F0]">

@@ -86,7 +86,7 @@ function Faq() {
         <div className=" bg-[#FFFBF5] lg:pt-24 py-16">
           <div className=" max-w-7xl mx-auto px-6 lg:flex">
             <div className="lg:w-1/3 self-center lg:pr-6 overflow-hidden">
-              <h1 className="text-[#D14D72] drop-shadow-md font-bold text-3xl lg:text-6xl text-left">
+              <h1 className="text-[#D14D72] drop-shadow-md font-bold text-3xl md:text-6xl text-left">
                 Frequently Asked Questions
               </h1>
               <p className=" text-base md:text-lg font-medium text-[#D14D72] mt-2 lg:mt-6 mb-12 lg:mb-0 self-center text-justify">
