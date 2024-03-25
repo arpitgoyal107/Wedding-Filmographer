@@ -94,7 +94,7 @@ function Header() {
           <div
             className={`md:flex items-center ${isOpen ? "block" : "hidden"}`}
           >
-            <ul className="flex font-bold lg:flex-row space-x-12 tracking-widest">
+            <ul className="flex font-bold lg:flex-row space-x-12">
               <li>
                 <NavLink
                   to="/"
