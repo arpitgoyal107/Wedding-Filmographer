@@ -78,13 +78,13 @@ function Faq() {
     <>
       <ScrollToTop />
       <section className=" bg-[#FFFBF5] overflow-hidden">
-        <div className="pt-[112px]"></div>
-        <div className=" h-[calc(100svh-112px)]">
+        <div className="pt-[108px]"></div>
+        <div className=" h-[calc(100svh-108px)]">
           <ImageCarousel images={images} />
         </div>
 
-        <div className=" bg-[#FFFBF5] lg:pt-24 py-16">
-          <div className=" max-w-7xl mx-auto px-6 lg:flex">
+        <div className=" bg-white lg:pt-32 py-16">
+          <div className=" max-w-6xl mx-auto px-6 lg:flex">
             <div className="lg:w-1/3 self-center lg:pr-6 overflow-hidden">
               <h1 className="text-[#D14D72] drop-shadow-md font-bold text-3xl md:text-6xl text-left">
                 Frequently Asked Questions
@@ -101,14 +101,14 @@ function Faq() {
               </p>
             </div>
 
-            <div className=" lg:w-2/3 aspect-video max-h-[100svh-112px] lg:pl-6 mx-auto">
+            <div className=" lg:w-2/3 aspect-video max-h-[100svh-108px] lg:pl-6 mx-auto">
               <ImageCarousel images={images2} />
             </div>
           </div>
         </div>
 
-        <div className="bg-[#FFDFDF] py-16 lg:pb-32">
-          <div className="max-w-7xl mx-auto px-6 ">
+        <div className="bg-[#FFDFDF] pt-16 pb-24">
+          <div className="max-w-6xl mx-auto px-6 ">
             <div className="grid md:grid-cols-2 gap-6 rounded-md">
               {questions.map((question, index) => (
                 <div

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ScrollToTop from "./SubComponents/ScrollToTop";
 import ImageCarousel from "./SubComponents/ImageCarousel";
+import Carousel from "./SubComponents/Carousel";
 
 const events = [
   {
@@ -140,23 +141,23 @@ function Gallery() {
   return (
     <>
       <ScrollToTop />
-      <section className="bg-[#FFFBF5] overflow-hidden">
-        <div className="pt-[112px]"></div>
-        <div className=" h-[calc(100svh-112px)]">
-          <ImageCarousel images={images} />
+      <section className="bg-[#FDF0F0] overflow-hidden">
+        <div className="pt-[108px]"></div>
+        <div className=" h-[calc(100svh-108px)]">
+          <Carousel events={events} />
         </div>
 
-        <div className=" max-w-7xl mx-auto mt-12 md:mt-24 mb-6 p-6">
+        <div className=" max-w-6xl mx-auto my-24 md:my-32 px-6">
           <img
             src="../images/decor/bride.png"
             alt=""
             className=" w-32 md:w-48 mx-auto"
           />
-          <h1 className="text-center font-medium text-xl md:text-2xl italic font-serif mb-8">
+          <h1 className="text-center font-normal text-xl md:text-2xl italic font-serif ">
             Our Hearts
           </h1>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {events.map((event) => (
               <div
                 key={event.name}
@@ -181,44 +182,46 @@ function Gallery() {
           </div>
         </div>
 
-        <div className="w-screen overflow-hidden h-32 md:h-52 ">
-          <img
-            src="/images/decor/tagline.png"
-            alt=""
-            className="w-full h-full object-cover"
-          />
+        <div className="bg-[#D14D72]">
+          <div className="max-w-6xl mx-auto px-6">
+            <h1 className=" text-2xl md:text-3xl font-semibold text-center py-3 md:py-5 tracking-wider text-white capitalize">
+              we're here to win hearts.
+            </h1>
+          </div>
         </div>
 
-        <div className="py-12 md:pt-20 md:pb-32 max-w-7xl px-3 mx-auto">
-          <div className=" flex justify-center mb-6 md:mb-12">
-            <div className=" flex items-center">
-              <img
-                src="../images/decor/instagramlogo.png"
-                alt=""
-                className=" w-12 md:w-16 mx-auto"
-              />
-              <h1 className="text-center font-medium text-xl md:text-2xl font-serif italic pl-2">
-                Instagram
-              </h1>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-3 gap-1">
-            {instagramfeed.map((instagrampost) => (
-              <div
-                key={instagrampost.url}
-                className=" relative overflow-hidden aspect-square"
-              >
-                <Link to={`${instagrampost.igurl}`}>
-                  <div className=" relative overflow-hidden bg-[url('../images/decor/instabg.png')] bg-contain ">
-                    <img
-                      src={instagrampost.url}
-                      className="object-cover w-full h-full transition-transform duration-300 hover:scale-110 hover:cursor-pointer hover:opacity-50"
-                    />
-                  </div>
-                </Link>
+        <div className=" bg-white">
+          <div className="max-w-6xl mx-auto py-24 md:py-32">
+            <div className=" flex justify-center">
+              <div className=" flex items-center mb-12">
+                <img
+                  src="../images/decor/instagramlogo.png"
+                  alt=""
+                  className=" w-12 md:w-16 mx-auto"
+                />
+                <h1 className="text-center font-medium text-xl md:text-2xl font-serif italic pl-2">
+                  Instagram
+                </h1>
               </div>
-            ))}
+            </div>
+
+            <div className="grid grid-cols-3 gap-1">
+              {instagramfeed.map((instagrampost) => (
+                <div
+                  key={instagrampost.url}
+                  className=" relative overflow-hidden aspect-square"
+                >
+                  <Link to={`${instagrampost.igurl}`}>
+                    <div className=" relative overflow-hidden bg-[url('../images/decor/instabg.png')] bg-contain ">
+                      <img
+                        src={instagrampost.url}
+                        className="object-cover w-full h-full transition-transform duration-300 hover:scale-110 hover:cursor-pointer hover:opacity-50"
+                      />
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

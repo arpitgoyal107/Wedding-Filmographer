@@ -13,19 +13,19 @@ function Contact() {
   return (
     <>
       <ScrollToTop />
-      <section className="bg-[#FFFBF5] overflow-hidden">
-        <div className="pt-[112px]"></div>
-        <div className=" h-[calc(100svh-112px)]">
+      <section className="bg-white overflow-hidden">
+        <div className="pt-[108px]"></div>
+        <div className=" h-[calc(100svh-108px)]">
           <ImageCarousel images={images} />
         </div>
 
-        <div className="w-screen lg:min-h-[calc(100svh-112px)] grid lg:grid-cols-2">
+        <div className="w-full lg:min-h-[calc(100svh-108px)] grid lg:grid-cols-2">
           <div className="w-full h-full bg-[#D14D72]">
-            <div className="max-w-[40rem] h-full bg-[#FFDFDF] relative lg:mr-0 lg:ml-auto mx-auto">
+            <div className="max-w-[36rem] h-full bg-[#FFDFDF] relative lg:mr-0 lg:ml-auto mx-auto">
               <div className="absolute right-0 z-0 lg:left-0 w-1/3 h-full bg-[#D14D72]"></div>
 
               <div className="w-full flex h-full justify-center items-center relative z-[1] ">
-                <div className="w-full aspect-video my-12 mx-6 rounded-md overflow-hidden bg-[#FFDFDF]">
+                <div className="w-full aspect-video my-24 lg:my-12 mx-6 rounded-md overflow-hidden bg-[#FFDFDF]">
                   <ImageCarousel images={images2} />
                 </div>
               </div>
@@ -33,7 +33,7 @@ function Contact() {
           </div>
 
           <div className="w-full h-full bg-[#FFDFDF] flex justify-center items-center">
-            <div class="max-w-[40rem] w-full mx-auto lg:ml-0 lg:mr-auto px-6">
+            <div class="max-w-[36rem] w-full mx-auto lg:ml-0 lg:mr-auto px-6">
               <div class="mb-16">
                 <h1 class="font-bold text-sm md:text-lg text-[#d14d72d7] mt-6">
                   Contact Us
@@ -58,7 +58,7 @@ function Contact() {
                 </p>
               </div>
 
-              <hr class="border-t-2 border-[#FFFBF5]" />
+              <hr class="border-t-2 border-white" />
 
               <div class="my-6">
                 <a
@@ -72,7 +72,7 @@ function Contact() {
                 </p>
               </div>
 
-              <hr class="border-t-2 border-[#FFFBF5]" />
+              <hr class="border-t-2 border-white" />
 
               <div class="my-6">
                 <p class="font-bold text-base md:text-xl text-[#D14D72]">
@@ -86,9 +86,9 @@ function Contact() {
           </div>
         </div>
 
-        <div className="w-screen lg:min-h-[calc(100svh-112px)] grid lg:grid-cols-2">
+        <div className="w-full lg:min-h-[calc(100svh-108px)] grid lg:grid-cols-2">
           <div className="w-full h-full bg-[#FDF0F0] flex justify-center items-center">
-            <div class="max-w-[40rem] w-full mx-auto lg:mr-0 lg:ml-auto px-6">
+            <div class="max-w-[36rem] w-full mx-auto lg:mr-0 lg:ml-auto px-6">
               <div className="mb-16">
                 <h1 className="font-bold text-sm md:text-lg text-[#D14D72D7] mt-6">
                   Contact Us
@@ -106,11 +106,11 @@ function Contact() {
           </div>
 
           <div className="w-full h-full bg-[#FFABAB]">
-            <div className="max-w-[40rem] h-full bg-[#FDF0F0] relative lg:ml-0 lg:mr-auto mx-auto">
+            <div className="max-w-[36rem] h-full bg-[#FDF0F0] relative lg:ml-0 lg:mr-auto mx-auto">
               <div className=" absolute z-0 right-0 w-1/3 h-full bg-[#FFABAB] "></div>
 
               <div className=" h-full w-full flex justify-center items-center relative z-[1]">
-                <div className="w-full aspect-video my-12 mx-6 rounded-md overflow-hidden bg-[#FDF0F0]">
+                <div className="w-full aspect-video my-24 lg:my-12 mx-6 rounded-md overflow-hidden bg-[#FDF0F0]">
                   <ImageCarousel images={images3} />
                 </div>
               </div>

@@ -9,10 +9,10 @@ function About() {
     <>
       <ScrollToTop />
       <section className="overflow-hidden">
-        <div className="pt-[112px]"></div>
+        <div className="pt-[108px]"></div>
 
-        <div className=" lg:min-h-[calc(100svh-112px)] w-screen grid lg:grid-cols-2 bg-[#FFDFDF] overflow-hidden ">
-          <div className="overflow-hidden h-[calc(100svh-112px)]">
+        <div className=" lg:min-h-[calc(100svh-108px)] w-screen grid lg:grid-cols-2 bg-[#FFDFDF] overflow-hidden ">
+          <div className="overflow-hidden h-[calc(100svh-108px)]">
             <img
               src="/images/section/16.jpg"
               className="w-full h-full object-cover"
@@ -40,7 +40,7 @@ function About() {
           </div>
         </div>
 
-        <div className="lg:min-h-[calc(100vh-112px)] w-screen grid grid-cols-3 bg-[#FFFBF5] overflow-hidden">
+        <div className="lg:min-h-[calc(100vh-108px)] w-screen grid grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full bg-[#D14D72]">
             <div className="lg:max-w-[40rem] flex justify-end items-center mx-auto h-full lg:mr-0">
               <div className="text-center">
@@ -51,7 +51,7 @@ function About() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center min-h-[calc(100vh-112px)] col-span-2 lg:col-span-1 overflow-hidden">
+          <div className="flex items-center justify-center min-h-[calc(100vh-108px)] col-span-2 lg:col-span-1 overflow-hidden">
             <div className="lg:max-w-[40rem] mx-auto px-6 my-8 ">
               <h2 className="text-2xl md:text-3xl font-semibold text-[#001d2c] mb-4">
                 Experiences Beyond Imagining
@@ -74,7 +74,7 @@ function About() {
             </div>
           </div>
 
-          <div className="overflow-hidden min-h-[calc(100vh-112px)] bg-[#FFABAB] col-span-3 lg:col-span-1">
+          <div className="overflow-hidden min-h-[calc(100vh-108px)] bg-[#FFABAB] col-span-3 lg:col-span-1">
             <img
               src="/images/section/6.jpg"
               className="w-full h-full object-cover"
@@ -83,15 +83,15 @@ function About() {
           </div>
         </div>
 
-        <div className="min-h-[calc(100vh-112px)] w-screen grid grid-cols-2 bg-[#FDF0F0]">
-          <div className="h-full sm:h-[calc(100vh-112px)]">
+        <div className="min-h-[calc(100vh-108px)] w-screen grid grid-cols-2 bg-[#FDF0F0]">
+          <div className="h-full sm:h-[calc(100vh-108px)]">
             <img
               src="/images/section/4.jpg"
               className="w-full h-full object-cover"
               alt=""
             />
           </div>
-          <div className="flex items-center justify-center min-h-[calc(100vh-112px)] overflow-hidden">
+          <div className="flex items-center justify-center min-h-[calc(100vh-108px)] overflow-hidden">
             <div className="max-w-[40rem] mx-auto lg:mr-auto lg:ml-0 px-6 my-8">
               <h1 className="text-3xl md:text-6xl font-bold mb-6 text-[#001d2c]">
                 Let's Create{" "}
@@ -108,7 +108,7 @@ function About() {
           </div>
         </div>
 
-        <div className="lg:min-h-[calc(100vh-112px)] w-screen grid grid-cols-2 lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
+        <div className="lg:min-h-[calc(100vh-108px)] w-screen grid grid-cols-2 lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full bg-[#D14D72] col-span-2 lg:col-span-1">
             <div className="lg:max-w-xl flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
               <div className="text-center">

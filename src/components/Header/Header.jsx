@@ -1,107 +1,114 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    // Toggle body scrolling
+    document.body.classList.toggle("overflow-hidden", !isOpen);
   };
 
   return (
     <>
-      <header className="px-6 m-0 z-10 bg-[#FFFBF5] fixed w-full">
-        <nav className="flex items-center justify-between py-2 max-w-screen-2xl mx-auto">
+      <header className="z-10 bg-white fixed w-full">
+        <nav className="flex items-center justify-between max-w-6xl px-6 my-5 mx-auto">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img src="../images/Black-png.png" alt="Logo" className=" h-24" />
+          <Link to="/" className="flex items-center flex-col pr-6">
+            <img src="../images/Black.png" alt="Logo" className="w-52" />
           </Link>
 
           {/* Responsive menu button (for mobile) */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="text-black focus:outline-none"
+              className="text-black focus:outline-none transition-transform duration-300"
             >
-              <FaBars size={30} color="black" />
+              {isOpen ? (
+                <FaTimes size={33} color="black" />
+              ) : (
+                <FaBars size={30} color="black" />
+              )}
             </button>
           </div>
 
           {/* Sidebar for mobile view */}
           <div
-            className={`md:hidden ${
-              isOpen ? "block" : "hidden"
-            } absolute top-0 left-0 w-full h-screen bg-gray-800 py-4`}
+            className={`lg:hidden fixed top-0 left-0 w-full h-screen bg-white z-[-10] transition-transform transform ${
+              isOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
           >
-            <ul className="text-white text-center">
-              <li className="py-2">
-                <NavLink
-                  to="/"
-                  exact
-                  activeClassName="font-bold"
-                  className="block py-2 duration-200 hover:text-gray-300"
-                  onClick={toggleMenu}
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li className="py-2">
-                <NavLink
-                  to="/about-us"
-                  activeClassName="font-bold"
-                  className="block py-2 duration-200 hover:text-gray-300"
-                  onClick={toggleMenu}
-                >
-                  About Us
-                </NavLink>
-              </li>
-              <li className="py-2">
-                <NavLink
-                  to="/photography"
-                  activeClassName="font-bold"
-                  className="block py-2 duration-200 hover:text-gray-300"
-                  onClick={toggleMenu}
-                >
-                  Our Work
-                </NavLink>
-              </li>
-              <li className="py-2">
-                <NavLink
-                  to="/contact"
-                  activeClassName="font-bold"
-                  className="block py-2 duration-200 hover:text-gray-300"
-                  onClick={toggleMenu}
-                >
-                  Contact Us
-                </NavLink>
-              </li>
-              <li className="py-2">
-                <NavLink
-                  to="/questions"
-                  activeClassName="font-bold"
-                  className="block py-2 duration-200 hover:text-gray-300"
-                  onClick={toggleMenu}
-                >
-                  FAQ
-                </NavLink>
-              </li>
-            </ul>
+            <div className="pt-[108px]">
+              <ul className="text-black text-center font-medium uppercase">
+                <li className="py-2">
+                  <NavLink
+                    to="/"
+                    exact
+                    activeClassName="font-bold"
+                    className="block py-2 duration-200 hover:text-gray-300"
+                    onClick={toggleMenu}
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li className="py-2">
+                  <NavLink
+                    to="/about-us"
+                    activeClassName="font-bold"
+                    className="block py-2 duration-200 hover:text-gray-300"
+                    onClick={toggleMenu}
+                  >
+                    About Us
+                  </NavLink>
+                </li>
+                <li className="py-2">
+                  <NavLink
+                    to="/photography"
+                    activeClassName="font-bold"
+                    className="block py-2 duration-200 hover:text-gray-300"
+                    onClick={toggleMenu}
+                  >
+                    Our Work
+                  </NavLink>
+                </li>
+                <li className="py-2">
+                  <NavLink
+                    to="/questions"
+                    activeClassName="font-bold"
+                    className="block py-2 duration-200 hover:text-gray-300"
+                    onClick={toggleMenu}
+                  >
+                    Questions?
+                  </NavLink>
+                </li>
+                <li className="py-2">
+                  <NavLink
+                    to="/contact"
+                    activeClassName="font-bold"
+                    className="block py-2 duration-200 hover:text-gray-300"
+                    onClick={toggleMenu}
+                  >
+                    Contact Us
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Menu options */}
-          <div
-            className={`md:flex items-center ${isOpen ? "block" : "hidden"}`}
-          >
-            <ul className="flex font-bold lg:flex-row space-x-12">
+          <div className={`lg:flex items-center hidden space-x-12`}>
+            <ul className="flex lg:flex-row space-x-12">
               <li>
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `duration-300 ${
-                      isActive ? "text-gray-400" : "text-black"
-                    } hover:text-gary-400 uppercase`
+                    `duration-0 ${
+                      isActive
+                        ? "text-[#D14D72] font-bold border-b-2 border-[#D14D72]"
+                        : "text-black font-medium border-black"
+                    } hover:border-b-2 transition ease-in-out uppercase`
                   }
                 >
                   Home
@@ -111,9 +118,11 @@ function Header() {
                 <NavLink
                   to="/about-us"
                   className={({ isActive }) =>
-                    `duration-300 ${
-                      isActive ? "text-gray-400" : "text-black"
-                    } hover:text-gary-400 uppercase`
+                    `duration-0 ${
+                      isActive
+                        ? "text-[#D14D72] font-bold border-b-2 border-[#D14D72]"
+                        : "text-black font-medium border-black"
+                    } hover:border-b-2 transition ease-in-out uppercase`
                   }
                 >
                   About Us
@@ -123,9 +132,11 @@ function Header() {
                 <NavLink
                   to="/photography"
                   className={({ isActive }) =>
-                    `duration-300 ${
-                      isActive ? "text-gray-400" : "text-black"
-                    } hover:text-gary-400 uppercase`
+                    `duration-0 ${
+                      isActive
+                        ? "text-[#D14D72] font-bold border-b-2 border-[#D14D72]"
+                        : "text-black font-medium border-black"
+                    } hover:border-b-2 transition ease-in-out uppercase`
                   }
                 >
                   Our Work
@@ -135,9 +146,11 @@ function Header() {
                 <NavLink
                   to="/questions"
                   className={({ isActive }) =>
-                    `duration-300 ${
-                      isActive ? "text-gray-400" : "text-black"
-                    } hover:text-gary-400 uppercase`
+                    `duration-0 ${
+                      isActive
+                        ? "text-[#D14D72] font-bold border-b-2 border-[#D14D72]"
+                        : "text-black font-medium border-black"
+                    } hover:border-b-2 transition ease-in-out uppercase`
                   }
                 >
                   Questions?
@@ -147,9 +160,11 @@ function Header() {
                 <NavLink
                   to="/contact"
                   className={({ isActive }) =>
-                    `duration-300 ${
-                      isActive ? "text-gray-400" : "text-black"
-                    } hover:text-gary-400 uppercase`
+                    `duration-0 ${
+                      isActive
+                        ? "text-[#D14D72] font-bold border-b-2 border-[#D14D72]"
+                        : "text-black font-medium border-black"
+                    } hover:border-b-2 transition ease-in-out uppercase`
                   }
                 >
                   Contact Us

@@ -12,11 +12,11 @@ const Footer = () => {
   return (
     <footer>
       <section className="bg-gradient-to-l from-[#D14D72] via-[#FFABAB] to-[#D14D72] text-white relative">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 px-6 py-6 overflow-hidden relative z-[1] gap-4">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 px-6 py-12 overflow-hidden relative z-[1] gap-4">
           <div className="">
             <div className="w-52 mx-auto md:ml-0 ">
               <img src="/images/White.png" alt="" />
-              <p className=" text-sm text-center pt-1 pr-1">
+              <p className=" text-sm text-center mt-1 pr-1 font-medium capitalize tracking-wide">
                 We're here to win hearts
               </p>
             </div>
@@ -98,15 +98,15 @@ const Footer = () => {
         </div>
       </section>
       <section className="bg-[#D14D72] text-white">
-        <div className="py-2 max-w-7xl px-6 mx-auto">
-          <p className="text-center text-white text-sm md:text-base">
+        <div className="py-4 max-w-6xl px-6 mx-auto">
+          <p className="text-center text-white text-sm md:text-base tracking-wider">
             &copy; 2024 Wedding Filmographer | All Rights Reserved | Crafted
             with &hearts; by{" "}
             <a
               href="https://www.linkedin.com/in/arpitgoyal107/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:underline"
+              className="text-white hover:underline font-semibold"
             >
               Arpit Goyal
             </a>

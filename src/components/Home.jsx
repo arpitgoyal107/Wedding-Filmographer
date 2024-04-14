@@ -31,22 +31,23 @@ function Home() {
   return (
     <>
       <ScrollToTop />
-      <div className=" overflow-hidden bg-[#FFFBF5]">
-        <section className="relative z-[1]">
-          <div className=" w-screen h-svh overflow-hidden">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className=" object-cover h-full w-full"
-            >
-              <source src="../video/hero.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
 
-          <div className="py-16 md:py-32 max-w-7xl px-6 mx-auto">
+      <section className="overflow-hidden bg-white">
+        <div className=" w-screen h-svh overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className=" object-cover h-full w-full"
+          >
+            <source src="../video/hero.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div className="bg-[#FDF0F0]">
+          <div className="py-16 md:py-32 max-w-6xl px-6 mx-auto">
             <div className="grid md:grid-cols-2 mb-16 md:mb-32 gap-6">
               <div className=" self-center">
                 <h1 className=" font-bold text-3xl md:text-6xl text-left ">
@@ -121,12 +122,22 @@ function Home() {
               ></iframe>
             </div>
           </div>
-
-          <div className=' bg-[url("/../images/section/1.jpg")] bg-fixed bg-center bg-no-repeat bg-cover h-[100vh]'></div>
-        </section>
-        <div className="mt-[-112px] ">
-          <Gallery />
         </div>
+
+        <div className=' bg-[url("/../images/section/1.jpg")] bg-fixed bg-center bg-no-repeat bg-cover h-[100vh]'></div>
+      </section>
+
+      <section className=" bg-[#D14D72] h-screen relative z-[2]">
+        <div className=" max-w-6xl px-6 text-center py-24 mx-auto">
+          <h1 className=" text-6xl font-bold text-white">Exclusive Deals</h1>
+          <p>Exclusively for you</p>
+
+          <div></div>
+        </div>
+      </section>
+
+      <div className="mt-[-108px] ">
+        <Gallery />
       </div>
     </>
   );
