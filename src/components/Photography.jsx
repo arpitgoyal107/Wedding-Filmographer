@@ -158,7 +158,7 @@ function Gallery() {
               Our Hearts
             </h1>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 md:mt-12">
               {events.map((event) => (
                 <div
                   key={event.name}
@@ -195,7 +195,7 @@ function Gallery() {
         <div className=" bg-white">
           <div className="max-w-6xl mx-auto py-24 md:py-32">
             <div className=" flex justify-center">
-              <div className=" flex items-center mb-12">
+              <div className=" flex items-center mb-6 md:mb-12">
                 <img
                   src="../images/decor/instagramlogo.png"
                   alt=""
