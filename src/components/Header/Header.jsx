@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaPhone,
+  FaEnvelope,
+} from "react-icons/fa";
+
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -74,7 +83,7 @@ function Header() {
                 </li>
                 <li className="py-4">
                   <NavLink
-                    to="/photography"
+                    to="/our-work"
                     className={({ isActive }) =>
                       `duration-0 ${
                         isActive
@@ -104,7 +113,7 @@ function Header() {
                 </li>
                 <li className="py-4">
                   <NavLink
-                    to="/contact"
+                    to="/contact-us"
                     className={({ isActive }) =>
                       `duration-0 ${
                         isActive
@@ -118,6 +127,41 @@ function Header() {
                   </NavLink>
                 </li>
               </ul>
+
+              <div className="flex flex-row justify-center space-x-4 md:space-x-2 lg:space-x-4 py-4">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" text-white bg-gradient-to-l from-[#FFABAB] from-10% to-[#D14D72] p-3 rounded-full shadow-md"
+                >
+                  <FaFacebookF />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white bg-gradient-to-l from-[#FFABAB] from-10% to-[#D14D72] p-3 rounded-full shadow-md"
+                >
+                  <FaTwitter />
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white bg-gradient-to-l from-[#FFABAB] from-10% to-[#D14D72] p-3 rounded-full shadow-md"
+                >
+                  <FaLinkedinIn />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white bg-gradient-to-l from-[#FFABAB] from-10% to-[#D14D72] p-3 rounded-full shadow-md"
+                >
+                  <FaInstagram />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -154,7 +198,7 @@ function Header() {
               </li>
               <li>
                 <NavLink
-                  to="/photography"
+                  to="/our-work"
                   className={({ isActive }) =>
                     `duration-0 ${
                       isActive
@@ -182,7 +226,7 @@ function Header() {
               </li>
               <li>
                 <NavLink
-                  to="/contact"
+                  to="/contact-us"
                   className={({ isActive }) =>
                     `duration-0 ${
                       isActive

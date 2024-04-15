@@ -156,7 +156,7 @@ function Gallery() {
           <Carousel events={events} />
         </div>
 
-        <div className="bg-[#FFDFDF]">
+        <div className="bg-[#FDF0F0]">
           <div className="max-w-6xl mx-auto py-16 md:py-24 px-6">
             <img
               src="../images/decor/bride.png"
@@ -173,7 +173,7 @@ function Gallery() {
                   key={index}
                   className="relative overflow-hidden aspect-[2/3]"
                 >
-                  <Link to={`/photography/${event.name}`}>
+                  <Link to={`/our-work/${event.name}`}>
                     <div className="relative overflow-hidden aspect-[2/3]">
                       <img
                         src={event.url}
@@ -199,7 +199,7 @@ function Gallery() {
               <h1 className="text-4xl md:text-6xl font-bold text-white">
                 Special Offer
               </h1>
-              <p className="text-lg text-white self-center ml-2">
+              <p className="text-sm md:text-lg text-white self-center md:ml-2">
                 ~ Exclusive Deal for you
               </p>
             </div>
@@ -207,6 +207,8 @@ function Gallery() {
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12">
               <div className="bg-white rounded-md shadow-xl p-6 md:col-span-2">
                 <h2 className="text-2xl md:text-3xl font-semibold text-[#D14D72] mb-6 text-center underline">
+                  Complimentary Gift with
+                  <br />
                   Gold Package
                 </h2>
                 <div className="w-full mx-auto aspect-[5/7]">
@@ -216,6 +218,8 @@ function Gallery() {
 
               <div className="bg-white rounded-md shadow-xl p-6 md:col-span-3">
                 <h2 className="text-2xl md:text-3xl font-semibold text-[#D14D72] mb-6 text-center underline">
+                  Complimentary Gift with
+                  <br />
                   Platinum Package
                 </h2>
                 <div className=" items-center justify-center">
@@ -235,6 +239,8 @@ function Gallery() {
                     +
                   </h3>
                   <h3 className="text-2xl md:text-3xl font-semibold text-[#D14D72] text-center">
+                    Complimentary Gift with
+                    <br />
                     Gold package
                   </h3>
                 </div>
@@ -252,9 +258,12 @@ function Gallery() {
                   alt=""
                   className="w-12 md:w-16 mx-auto"
                 />
-                <h1 className="text-center font-medium text-xl md:text-2xl pl-2">
+                <Link
+                  to="https://www.instagram.com/weddingfilmographer"
+                  className=" font-medium text-xl md:text-2xl pl-2"
+                >
                   Instagram
-                </h1>
+                </Link>
               </div>
             </div>
 

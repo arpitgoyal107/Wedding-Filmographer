@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer>
       <section className="bg-gradient-to-l from-[#D14D72] via-[#FFABAB] to-[#D14D72] text-white relative">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 px-6 py-12 overflow-hidden relative z-[1] gap-4">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 px-6 py-16 overflow-hidden relative z-[1] gap-4">
           <div className="">
             <div className="w-52 mx-auto md:ml-0 ">
               <img src="/images/White.png" alt="" />

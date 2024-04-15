@@ -92,7 +92,7 @@ function Faq() {
                 Got a question? We're here to answer! if you don't see your
                 question here, drop us a line at our{" "}
                 <Link
-                  to="/contact"
+                  to="/contact-us"
                   className="font-semibold underline-offset-2 underline hover:text-[#d14d72b2]"
                 >
                   Contact Page
