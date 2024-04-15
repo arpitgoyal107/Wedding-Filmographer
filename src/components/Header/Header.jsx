@@ -47,9 +47,9 @@ function Header() {
           <div
             className={`lg:hidden fixed top-0 left-0 w-full h-screen bg-white z-[-10] transition-transform transform ${
               isOpen ? "translate-x-0" : "-translate-x-full"
-            }`}
+            } flex justify-center items-center`}
           >
-            <div className="pt-[112px]">
+            <div className="">
               <ul className="text-black text-center font-medium uppercase">
                 <li className="py-4">
                   <NavLink
