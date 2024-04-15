@@ -2,8 +2,6 @@ import React from "react";
 import ScrollToTop from "./SubComponents/ScrollToTop";
 import "./styles.css";
 
-const images = ["/images/section/7.jpg"];
-
 function About() {
   return (
     <>
@@ -11,7 +9,7 @@ function About() {
       <section className="overflow-hidden">
         <div className="pt-[108px]"></div>
 
-        <div className=" lg:min-h-[calc(100svh-108px)] w-screen grid lg:grid-cols-2 bg-[#FFDFDF] overflow-hidden ">
+        <div className="lg:min-h-[calc(100svh-108px)] w-full grid lg:grid-cols-2 bg-[#FFDFDF] overflow-hidden">
           <div className="overflow-hidden h-[calc(100svh-108px)]">
             <img
               src="/images/section/16.jpg"
@@ -20,7 +18,7 @@ function About() {
             />
           </div>
 
-          <div className=" mx-auto max-w-[40rem] self-center lg:mr-auto lg:ml-0 px-6 my-8 ">
+          <div className="mx-auto max-w-[36rem] self-center lg:mr-auto lg:ml-0 px-6 my-8">
             <h1 className="text-3xl md:text-6xl font-bold mb-6 text-[#001d2c]">
               Welcome to{" "}
               <span className="text-[#FF6B6B]">Wedding Filmographer</span>
@@ -40,9 +38,9 @@ function About() {
           </div>
         </div>
 
-        <div className="lg:min-h-[calc(100vh-108px)] w-screen grid grid-cols-3 bg-[#FFFBF5] overflow-hidden">
+        <div className="lg:min-h-[calc(100vh-108px)] w-full grid grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full bg-[#D14D72]">
-            <div className="lg:max-w-[40rem] flex justify-end items-center mx-auto h-full lg:mr-0">
+            <div className="lg:max-w-[36rem] flex justify-end items-center mx-auto h-full lg:mr-0">
               <div className="text-center">
                 <h1 className="text-3xl md:text-6xl font-bold text-[#FFFBF5] uppercase p-6 onlyverticaltext rotate-180">
                   About Us
@@ -52,7 +50,7 @@ function About() {
           </div>
 
           <div className="flex items-center justify-center min-h-[calc(100vh-108px)] col-span-2 lg:col-span-1 overflow-hidden">
-            <div className="lg:max-w-[40rem] mx-auto px-6 my-8 ">
+            <div className="lg:max-w-[45rem] mx-auto px-6 my-8">
               <h2 className="text-2xl md:text-3xl font-semibold text-[#001d2c] mb-4">
                 Experiences Beyond Imagining
               </h2>
@@ -83,7 +81,7 @@ function About() {
           </div>
         </div>
 
-        <div className="min-h-[calc(100vh-108px)] w-screen grid grid-cols-2 bg-[#FDF0F0]">
+        <div className="min-h-[calc(100vh-108px)] w-full grid grid-cols-2 bg-[#FDF0F0]">
           <div className="h-full sm:h-[calc(100vh-108px)]">
             <img
               src="/images/section/4.jpg"
@@ -92,7 +90,7 @@ function About() {
             />
           </div>
           <div className="flex items-center justify-center min-h-[calc(100vh-108px)] overflow-hidden">
-            <div className="max-w-[40rem] mx-auto lg:mr-auto lg:ml-0 px-6 my-8">
+            <div className="max-w-[36rem] mx-auto lg:mr-auto lg:ml-0 px-6 my-8">
               <h1 className="text-3xl md:text-6xl font-bold mb-6 text-[#001d2c]">
                 Let's Create{" "}
                 <span className="text-[#FF6B6B]">Something Magical</span>
@@ -108,7 +106,7 @@ function About() {
           </div>
         </div>
 
-        <div className="lg:min-h-[calc(100vh-108px)] w-screen grid grid-cols-2 lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
+        <div className="lg:min-h-[calc(100vh-108px)] w-full grid grid-cols-2 lg:grid-cols-3 bg-[#FFFBF5] overflow-hidden">
           <div className="w-full bg-[#D14D72] col-span-2 lg:col-span-1">
             <div className="lg:max-w-xl flex justify-start lg:justify-end items-center mx-auto h-full lg:mr-0">
               <div className="text-center">
@@ -119,7 +117,7 @@ function About() {
             </div>
           </div>
 
-          <div className="max-w-3xl lg:max-w-[40rem] self-center mx-auto px-6 my-8">
+          <div className="max-w-3xl lg:max-w-[45rem] self-center mx-auto px-6 my-8">
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#001d2c] ">
               Akash Singhal
             </h2>
@@ -132,7 +130,7 @@ function About() {
           </div>
 
           <div className="bg-[#FFABAB]">
-            <div className="max-w-[40rem] items-center p-6 pr-10 flex mx-auto lg:ml-0 h-full justify-center ">
+            <div className="max-w-[36rem] items-center p-6 pr-10 flex mx-auto lg:ml-0 h-full justify-center">
               <img
                 src="../images/Akash_Singhal.png"
                 alt=""

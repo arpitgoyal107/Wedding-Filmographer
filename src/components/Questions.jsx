@@ -77,50 +77,49 @@ function Faq() {
   return (
     <>
       <ScrollToTop />
-      <section className=" bg-[#FFFBF5] overflow-hidden">
-        <div className="pt-[108px]"></div>
-        <div className=" h-[calc(100svh-108px)]">
+      <section className="bg-[#FFFBF5] overflow-hidden pt-[108px]">
+        <div className="h-[calc(100svh-108px)]">
           <ImageCarousel images={images} />
         </div>
 
-        <div className=" bg-white lg:pt-32 py-16">
-          <div className=" max-w-6xl mx-auto px-6 lg:flex">
+        <div className="bg-white lg:pt-32 py-16">
+          <div className="max-w-6xl mx-auto px-6 lg:flex">
             <div className="lg:w-1/3 self-center lg:pr-6 overflow-hidden">
               <h1 className="text-[#D14D72] drop-shadow-md font-bold text-3xl md:text-6xl text-left">
                 Frequently Asked Questions
               </h1>
-              <p className=" text-base md:text-lg font-medium text-[#D14D72] mt-2 lg:mt-6 mb-12 lg:mb-0 self-center text-justify">
+              <p className="text-base md:text-lg font-medium text-[#D14D72] mt-2 lg:mt-6 mb-12 lg:mb-0 self-center text-justify">
                 Got a question? We're here to answer! if you don't see your
                 question here, drop us a line at our{" "}
                 <Link
                   to="/contact"
-                  className=" font-semibold underline-offset-2 underline hover:text-[#d14d72b2]"
+                  className="font-semibold underline-offset-2 underline hover:text-[#d14d72b2]"
                 >
                   Contact Page
                 </Link>
               </p>
             </div>
 
-            <div className=" lg:w-2/3 aspect-video max-h-[100svh-108px] lg:pl-6 mx-auto">
+            <div className="lg:w-2/3 aspect-video max-h-[100svh-108px] lg:pl-6 mx-auto">
               <ImageCarousel images={images2} />
             </div>
           </div>
         </div>
 
         <div className="bg-[#FFDFDF] pt-16 pb-24">
-          <div className="max-w-6xl mx-auto px-6 ">
+          <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-6 rounded-md">
               {questions.map((question, index) => (
                 <div
                   key={index}
                   className="p-6 rounded-sm border-2 border-[#FFFBF5]"
                 >
-                  <dt className="text-[#001d2c] drop-shadow-md font-bold text-justify text-base md:text-lg ">
+                  <h2 className="text-[#001d2c] drop-shadow-md font-bold text-justify text-base md:text-lg">
                     {question.question}
-                  </dt>
-                  <dd className="text-[#001d2c] text-justify italic font-normal leading-relaxed text-sm md:text-base">
+                  </h2>
+                  <p className="text-[#001d2c] text-justify italic font-normal leading-relaxed text-sm md:text-base">
                     {question.answer}
-                  </dd>
+                  </p>
                 </div>
               ))}
             </div>

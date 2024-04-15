@@ -137,35 +137,44 @@ const instagramfeed = [
   },
 ];
 
+const invitationcard = [
+  "/images/Invitation card/1.jpeg",
+  "/images/Invitation card/2.jpeg",
+  "/images/Invitation card/3.jpeg",
+  "/images/Invitation card/4.jpeg",
+  "/images/Invitation card/5.jpeg",
+  "/images/Invitation card/6.jpeg",
+];
+
 function Gallery() {
   return (
     <>
       <ScrollToTop />
       <section className="bg-white overflow-hidden">
         <div className="pt-[108px]"></div>
-        <div className=" h-[calc(100svh-108px)]">
+        <div className="h-[calc(100vh-108px)]">
           <Carousel events={events} />
         </div>
 
         <div className="bg-[#FFDFDF]">
-          <div className=" max-w-6xl mx-auto py-24 md:py-32 px-6">
+          <div className="max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-6">
             <img
               src="../images/decor/bride.png"
               alt=""
-              className=" w-32 md:w-48 mx-auto"
+              className="w-32 md:w-48 mx-auto"
             />
-            <h1 className="text-center font-normal text-xl md:text-2xl italic font-serif ">
+            <h1 className="text-center font-normal text-xl md:text-2xl">
               Our Hearts
             </h1>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 md:mt-12">
-              {events.map((event) => (
+              {events.map((event, index) => (
                 <div
-                  key={event.name}
-                  className=" relative overflow-hidden aspect-[2/3]"
+                  key={index}
+                  className="relative overflow-hidden aspect-[2/3]"
                 >
                   <Link to={`/photography/${event.name}`}>
-                    <div className=" relative overflow-hidden aspect-[2/3]">
+                    <div className="relative overflow-hidden aspect-[2/3]">
                       <img
                         src={event.url}
                         alt={event.name}
@@ -175,7 +184,7 @@ function Gallery() {
 
                     <div className="absolute inset-x-0 bottom-0 h-16 bg-black opacity-50"></div>
                     <div className="absolute inset-x-0 bottom-0 h-16 flex items-center justify-center text-white">
-                      <p className=" text-center">{event.name}</p>
+                      <p className="text-center">{event.name}</p>
                     </div>
                   </Link>
                 </div>
@@ -184,37 +193,79 @@ function Gallery() {
           </div>
         </div>
 
-        <div className="bg-[#D14D72]">
-          <div className="max-w-6xl mx-auto px-6">
-            <h1 className=" text-xl md:text-3xl font-semibold text-center py-3 md:py-5 tracking-wider text-white capitalize">
-              we're here to win hearts.
-            </h1>
-          </div>
-        </div>
+        <section className="bg-[#D14D72]">
+          <div className="max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-6">
+            <div className="mb-8 md:mb-16 flex flex-col md:flex-row items-center">
+              <h1 className="text-4xl md:text-6xl font-bold text-white">
+                Special Offer
+              </h1>
+              <p className="text-lg text-white self-center ml-2">
+                ~ Exclusive Deal for you
+              </p>
+            </div>
 
-        <div className=" bg-white">
-          <div className="max-w-6xl mx-auto py-24 md:py-32">
-            <div className=" flex justify-center">
-              <div className=" flex items-center mb-6 md:mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12">
+              <div className="bg-white rounded-md shadow-xl p-6 md:col-span-2">
+                <h2 className="text-2xl md:text-3xl font-semibold text-[#D14D72] mb-6 text-center underline">
+                  Gold Package
+                </h2>
+                <div className="w-full mx-auto aspect-[5/7]">
+                  <ImageCarousel images={invitationcard} />
+                </div>
+              </div>
+
+              <div className="bg-white rounded-md shadow-xl p-6 md:col-span-3">
+                <h2 className="text-2xl md:text-3xl font-semibold text-[#D14D72] mb-6 text-center underline">
+                  Platinum Package
+                </h2>
+                <div className=" items-center justify-center">
+                  <div className="aspect-w-16 aspect-h-9">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="object-cover rounded-md shadow-xl"
+                    >
+                      <source src="../video/hero.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <h3 className="text-2xl md:text-4xl font-semibold text-[#D14D72] mt-3 text-center">
+                    +
+                  </h3>
+                  <h3 className="text-2xl md:text-3xl font-semibold text-[#D14D72] text-center">
+                    Gold package
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="bg-[#FDF0F0]">
+          <div className="max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-6">
+            <div className="flex justify-center mb-8 md:mb-16">
+              <div className="flex items-center">
                 <img
                   src="../images/decor/instagramlogo.png"
                   alt=""
-                  className=" w-12 md:w-16 mx-auto"
+                  className="w-12 md:w-16 mx-auto"
                 />
-                <h1 className="text-center font-medium text-xl md:text-2xl font-serif italic pl-2">
+                <h1 className="text-center font-medium text-xl md:text-2xl pl-2">
                   Instagram
                 </h1>
               </div>
             </div>
 
             <div className="grid grid-cols-3 gap-1">
-              {instagramfeed.map((instagrampost) => (
+              {instagramfeed.map((instagrampost, index) => (
                 <div
-                  key={instagrampost.url}
-                  className=" relative overflow-hidden aspect-square"
+                  key={index}
+                  className="relative overflow-hidden aspect-square"
                 >
                   <Link to={`${instagrampost.igurl}`}>
-                    <div className=" relative overflow-hidden bg-[url('../images/decor/instabg.png')] bg-contain ">
+                    <div className="relative overflow-hidden bg-[url('../images/decor/instabg.png')] bg-contain ">
                       <img
                         src={instagrampost.url}
                         className="object-cover w-full h-full transition-transform duration-300 hover:scale-110 hover:cursor-pointer hover:opacity-50"
