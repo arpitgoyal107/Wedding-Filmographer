@@ -40,54 +40,78 @@ function Header() {
               isOpen ? "translate-x-0" : "-translate-x-full"
             }`}
           >
-            <div className="pt-[108px]">
+            <div className="pt-[112px]">
               <ul className="text-black text-center font-medium uppercase">
-                <li className="py-2">
+                <li className="py-4">
                   <NavLink
                     to="/"
-                    exact
-                    activeClassName="font-bold"
-                    className="block py-2 duration-200 hover:text-gray-300"
+                    className={({ isActive }) =>
+                      `duration-0 ${
+                        isActive
+                          ? "text-[#D14D72] font-bold border-b-2 border-[#D14D72]"
+                          : "text-black font-medium border-black"
+                      } hover:border-b-2 transition ease-in-out uppercase`
+                    }
                     onClick={toggleMenu}
                   >
                     Home
                   </NavLink>
                 </li>
-                <li className="py-2">
+                <li className="py-4">
                   <NavLink
                     to="/about-us"
-                    activeClassName="font-bold"
-                    className="block py-2 duration-200 hover:text-gray-300"
+                    className={({ isActive }) =>
+                      `duration-0 ${
+                        isActive
+                          ? "text-[#D14D72] font-bold border-b-2 border-[#D14D72]"
+                          : "text-black font-medium border-black"
+                      } hover:border-b-2 transition ease-in-out uppercase`
+                    }
                     onClick={toggleMenu}
                   >
                     About Us
                   </NavLink>
                 </li>
-                <li className="py-2">
+                <li className="py-4">
                   <NavLink
                     to="/photography"
-                    activeClassName="font-bold"
-                    className="block py-2 duration-200 hover:text-gray-300"
+                    className={({ isActive }) =>
+                      `duration-0 ${
+                        isActive
+                          ? "text-[#D14D72] font-bold border-b-2 border-[#D14D72]"
+                          : "text-black font-medium border-black"
+                      } hover:border-b-2 transition ease-in-out uppercase`
+                    }
                     onClick={toggleMenu}
                   >
                     Our Work
                   </NavLink>
                 </li>
-                <li className="py-2">
+                <li className="py-4">
                   <NavLink
                     to="/questions"
-                    activeClassName="font-bold"
-                    className="block py-2 duration-200 hover:text-gray-300"
+                    className={({ isActive }) =>
+                      `duration-0 ${
+                        isActive
+                          ? "text-[#D14D72] font-bold border-b-2 border-[#D14D72]"
+                          : "text-black font-medium border-black"
+                      } hover:border-b-2 transition ease-in-out uppercase`
+                    }
                     onClick={toggleMenu}
                   >
                     Questions?
                   </NavLink>
                 </li>
-                <li className="py-2">
+                <li className="py-4">
                   <NavLink
                     to="/contact"
-                    activeClassName="font-bold"
-                    className="block py-2 duration-200 hover:text-gray-300"
+                    className={({ isActive }) =>
+                      `duration-0 ${
+                        isActive
+                          ? "text-[#D14D72] font-bold border-b-2 border-[#D14D72]"
+                          : "text-black font-medium border-black"
+                      } hover:border-b-2 transition ease-in-out uppercase`
+                    }
                     onClick={toggleMenu}
                   >
                     Contact Us
