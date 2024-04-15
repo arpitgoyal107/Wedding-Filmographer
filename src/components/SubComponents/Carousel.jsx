@@ -50,12 +50,8 @@ const Carousel = ({ events }) => {
   return (
     <Slider {...settings}>
       {events.map((event) => (
-        <div key={event.name} className="relative h-[calc(100svh-108px)]">
-          <img
-            src={event.url}
-            alt={event.name}
-            className="object-cover w-full h-full"
-          />
+        <div key={event.name} className="h-[calc(100svh-108px)]">
+          <img src={event.url} className="w-full object-cover h-full" />
         </div>
       ))}
     </Slider>

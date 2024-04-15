@@ -3,30 +3,16 @@ import { Link } from "react-router-dom";
 import ImageCarousel from "./SubComponents/ImageCarousel";
 import ScrollToTop from "./SubComponents/ScrollToTop";
 import Gallery from "./Photography";
+import Carousel from "./SubComponents/Carousel";
 
-const events = [
-  {
-    url: "/images/Lavneet and Shweta Wedding/VEER3399 copy.jpg",
-    name: "Lavneet & Shweta",
-  },
-  {
-    url: "/images/Piyush and Tripti Wedding/Layout/22.jpg",
-    name: "Piyush & Tripti",
-  },
-  {
-    url: "/images/Harshit/6.jpg",
-    name: "Harshit & Anjali",
-  },
-  {
-    url: "/images/Rakhi and Hemant/ss1.png",
-    name: "Hemant & Rakhi",
-  },
-  {
-    url: "/images/Harshit/6.jpg",
-    name: "Harshit & Anjali",
-  },
+const invitationcard = [
+  "/images/Invitation card/1.jpeg",
+  "/images/Invitation card/2.jpeg",
+  "/images/Invitation card/3.jpeg",
+  "/images/Invitation card/4.jpeg",
+  "/images/Invitation card/5.jpeg",
+  "/images/Invitation card/6.jpeg",
 ];
-
 function Home() {
   return (
     <>
@@ -127,12 +113,48 @@ function Home() {
         <div className=' bg-[url("/../images/section/1.jpg")] bg-fixed bg-center bg-no-repeat bg-cover h-[100vh]'></div>
       </section>
 
-      <section className=" bg-[#D14D72] h-screen relative z-[2]">
-        <div className=" max-w-6xl px-6 text-center py-24 mx-auto">
-          <h1 className=" text-6xl font-bold text-white">Exclusive Deals</h1>
-          <p>Exclusively for you</p>
+      <section className="bg-[#D14D72] relative z-[2]">
+        <div className="max-w-6xl mx-auto px-6 py-24">
+          <div className="text-center mb-12">
+            <h1 className="text-6xl font-bold text-white">Exclusive Deals</h1>
+            <p className="text-lg text-white">Exclusively for you</p>
+          </div>
 
-          <div></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="bg-white rounded-lg shadow-xl p-8">
+              <h2 className="text-3xl font-semibold text-[#D14D72] mb-4 text-center">
+                Gold Package
+              </h2>
+              <div className="w-4/5 mx-auto aspect-[5/7]">
+                <ImageCarousel images={invitationcard} />
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-xl p-8">
+              <h2 className="text-3xl font-semibold text-[#D14D72] mb-4 text-center">
+                Platinum Package
+              </h2>
+              <div className=" items-center justify-center">
+                <div className="aspect-w-16 aspect-h-9">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="object-cover rounded-lg shadow-xl"
+                  >
+                    <source src="../video/hero.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <h3 className="text-3xl font-semibold text-[#D14D72] mr-2 text-center">
+                  +
+                  <br />
+                  Gold package
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
