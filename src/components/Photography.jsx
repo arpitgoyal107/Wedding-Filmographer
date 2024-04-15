@@ -152,12 +152,12 @@ function Gallery() {
       <ScrollToTop />
       <section className="bg-white overflow-hidden">
         <div className="pt-[108px]"></div>
-        <div className="h-[calc(100vh-108px)]">
+        <div className="h-[calc(100svh-108px)]">
           <Carousel events={events} />
         </div>
 
         <div className="bg-[#FFDFDF]">
-          <div className="max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-6">
+          <div className="max-w-6xl mx-auto py-24 px-6">
             <img
               src="../images/decor/bride.png"
               alt=""
@@ -194,7 +194,7 @@ function Gallery() {
         </div>
 
         <section className="bg-[#D14D72]">
-          <div className="max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-6">
+          <div className="max-w-6xl mx-auto py-24 px-6">
             <div className="mb-8 md:mb-16 flex flex-col md:flex-row items-center">
               <h1 className="text-4xl md:text-6xl font-bold text-white">
                 Special Offer
@@ -244,7 +244,7 @@ function Gallery() {
         </section>
 
         <div className="bg-[#FDF0F0]">
-          <div className="max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-6">
+          <div className="max-w-6xl mx-auto py-24">
             <div className="flex justify-center mb-8 md:mb-16">
               <div className="flex items-center">
                 <img
