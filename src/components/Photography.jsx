@@ -141,50 +141,52 @@ function Gallery() {
   return (
     <>
       <ScrollToTop />
-      <section className="bg-[#FDF0F0] overflow-hidden">
+      <section className="bg-white overflow-hidden">
         <div className="pt-[108px]"></div>
         <div className=" h-[calc(100svh-108px)]">
           <Carousel events={events} />
         </div>
 
-        <div className=" max-w-6xl mx-auto my-24 md:my-32 px-6">
-          <img
-            src="../images/decor/bride.png"
-            alt=""
-            className=" w-32 md:w-48 mx-auto"
-          />
-          <h1 className="text-center font-normal text-xl md:text-2xl italic font-serif ">
-            Our Hearts
-          </h1>
+        <div className="bg-[#FFDFDF]">
+          <div className=" max-w-6xl mx-auto py-24 md:py-32 px-6">
+            <img
+              src="../images/decor/bride.png"
+              alt=""
+              className=" w-32 md:w-48 mx-auto"
+            />
+            <h1 className="text-center font-normal text-xl md:text-2xl italic font-serif ">
+              Our Hearts
+            </h1>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-            {events.map((event) => (
-              <div
-                key={event.name}
-                className=" relative overflow-hidden aspect-[2/3]"
-              >
-                <Link to={`/photography/${event.name}`}>
-                  <div className=" relative overflow-hidden aspect-[2/3]">
-                    <img
-                      src={event.url}
-                      alt={event.name}
-                      className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
-                    />
-                  </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+              {events.map((event) => (
+                <div
+                  key={event.name}
+                  className=" relative overflow-hidden aspect-[2/3]"
+                >
+                  <Link to={`/photography/${event.name}`}>
+                    <div className=" relative overflow-hidden aspect-[2/3]">
+                      <img
+                        src={event.url}
+                        alt={event.name}
+                        className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
+                      />
+                    </div>
 
-                  <div className="absolute inset-x-0 bottom-0 h-16 bg-black opacity-50"></div>
-                  <div className="absolute inset-x-0 bottom-0 h-16 flex items-center justify-center text-white">
-                    <p className=" text-center">{event.name}</p>
-                  </div>
-                </Link>
-              </div>
-            ))}
+                    <div className="absolute inset-x-0 bottom-0 h-16 bg-black opacity-50"></div>
+                    <div className="absolute inset-x-0 bottom-0 h-16 flex items-center justify-center text-white">
+                      <p className=" text-center">{event.name}</p>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
         <div className="bg-[#D14D72]">
           <div className="max-w-6xl mx-auto px-6">
-            <h1 className=" text-2xl md:text-3xl font-semibold text-center py-3 md:py-5 tracking-wider text-white capitalize">
+            <h1 className=" text-xl md:text-3xl font-semibold text-center py-3 md:py-5 tracking-wider text-white capitalize">
               we're here to win hearts.
             </h1>
           </div>

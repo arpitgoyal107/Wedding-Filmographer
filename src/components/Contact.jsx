@@ -25,7 +25,7 @@ function Contact() {
               <div className="absolute right-0 z-0 lg:left-0 w-1/3 h-full bg-[#D14D72]"></div>
 
               <div className="w-full flex h-full justify-center items-center relative z-[1] ">
-                <div className="w-full aspect-video my-24 lg:my-12 mx-6 rounded-md overflow-hidden bg-[#FFDFDF]">
+                <div className="w-full aspect-video my-12 mx-6 rounded-md overflow-hidden bg-[#FFDFDF]">
                   <ImageCarousel images={images2} />
                 </div>
               </div>
@@ -110,7 +110,7 @@ function Contact() {
               <div className=" absolute z-0 right-0 w-1/3 h-full bg-[#FFABAB] "></div>
 
               <div className=" h-full w-full flex justify-center items-center relative z-[1]">
-                <div className="w-full aspect-video my-24 lg:my-12 mx-6 rounded-md overflow-hidden bg-[#FDF0F0]">
+                <div className="w-full aspect-video my-12 mx-6 rounded-md overflow-hidden bg-[#FDF0F0]">
                   <ImageCarousel images={images3} />
                 </div>
               </div>

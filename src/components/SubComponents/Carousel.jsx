@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Carousel = ({ events }) => {
   const NextArrow = ({ onClick }) => (
     <button
-      className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-transparent border-none focus:outline-none"
+      className="absolute z-[2] top-1/2 right-2 transform -translate-y-1/2 bg-transparent border-none focus:outline-none"
       onClick={onClick}
     >
       <FaChevronRight size={30} color="#fff" />
@@ -17,7 +17,7 @@ const Carousel = ({ events }) => {
 
   const PrevArrow = ({ onClick }) => (
     <button
-      className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-transparent border-none focus:outline-none"
+      className="absolute z-[2] top-1/2 left-2 transform -translate-y-1/2 bg-transparent border-none focus:outline-none"
       onClick={onClick}
     >
       <FaChevronLeft size={30} color="#fff" />
