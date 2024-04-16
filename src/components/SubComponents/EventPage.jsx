@@ -39,13 +39,13 @@ const EventPage = () => {
         </div>
 
         <div>
-          <div className=" columns-1 md:columns-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-2">
             {eventDetails.additionalPhotos.map((photo, index) => (
               <img
                 key={index}
                 src={photo}
                 alt={`Event ${index + 1}`}
-                className=" w-full mb-8 relative overflow-hidden"
+                className=" w-full relative overflow-hidden"
               />
             ))}
           </div>

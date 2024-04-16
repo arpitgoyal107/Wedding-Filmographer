@@ -25,7 +25,10 @@ const ContactForm = () => {
       setIsSubmitting(true);
       // Show sending toast
       toast.info("Sending message...");
-      const response = await axios.post("/send-email", formData);
+      const response = await axios.post(
+        "http://localhost:3001/send-email",
+        formData
+      );
       // Show success toast
       toast.success("Message sent successfully!");
       setFormData({
