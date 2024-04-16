@@ -12,7 +12,7 @@ const EventPage = () => {
       <ScrollToTop />
       <div className="pt-[108px]"></div>
 
-      <div className=" max-w-6xl mx-auto mt-12 mb-24 px-6">
+      <div className=" max-w-6xl mx-auto mt-6 md:mt-12 mb-24 px-6">
         <div className=" grid md:grid-cols-2 mb-24 gap-6">
           <img
             src={eventDetails.mainPhoto}
