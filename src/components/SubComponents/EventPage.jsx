@@ -21,19 +21,19 @@ const EventPage = () => {
           />
 
           <div className="">
-            <h1 className=" text-xl">
+            <h1 className=" md:text-xl">
               <b>Couple:</b> {eventDetails.name}
             </h1>
-            <h2 className="text-xl mt-4">
+            <h2 className="md:text-xl mt-2 md:mt-4">
               <b>Dates:</b> {eventDetails.dates}
             </h2>
-            <h2 className="text-xl mt-4">
+            <h2 className="md:text-xl mt-2 md:mt-4">
               <b>Location:</b> {eventDetails.location}
             </h2>
 
-            <div className=" mt-4">
-              <h2 className=" text-xl font-bold">Description:</h2>
-              <p>{eventDetails.description}</p>
+            <div className="mt-2 md:mt-4">
+              <h2 className="md:text-xl font-bold">Description:</h2>
+              <p className=" text-justify">{eventDetails.description}</p>
             </div>
           </div>
         </div>
